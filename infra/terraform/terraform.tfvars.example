@@ -1,0 +1,4 @@
+project_id     = "replace-with-your-gcp-project-id"
+location       = "US"
+dataset_prefix = "healthcare_capstone"
+environment    = "dev"

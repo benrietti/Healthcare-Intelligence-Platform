@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_patient
+    description: "One row per synthetic patient; attributes are intentionally minimal and non-identifying."
+    columns:
+      - name: patient_id
+        tests: [not_null, unique]
+      - name: synthetic
+        tests: [not_null]
+  - name: fct_encounter_operations
+    description: "One row per synthetic encounter combining clinical, operational, financial, and pipeline-quality measures."
+    columns:
+      - name: encounter_id
+        tests: [not_null, unique]
+      - name: patient_id
+        tests: [not_null]
+      - name: facility_id
+        tests: [not_null]
+      - name: synthetic
+        description: "Raw synthetic marker retained in source models; this mart joins synthetic-only sources."

@@ -1,0 +1,12 @@
+healthcare_capstone:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: "{{ env_var('GCP_PROJECT_ID') }}"
+      dataset: "{{ env_var('DBT_ANALYTICS_DATASET', 'healthcare_capstone_analytics') }}"
+      location: US
+      threads: 4
+      job_execution_timeout_seconds: 300
+      priority: interactive

@@ -1,4 +1,4 @@
-Healthcare Data Platform Capstone
+Healthcare Data Platform Project
 A synthetic, end-to-end healthcare data system connecting cloud engineering, machine learning, and business intelligence.
 
 This capstone follows synthetic healthcare records from raw clinical events through a tested BigQuery warehouse, predictive modeling, and a Power BI hub. The design brings together clinical outcomes, operational performance, financial measures, and pipeline health in one connected system.

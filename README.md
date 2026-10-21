@@ -1,6 +1,6 @@
 # Healthcare Intelligence Platform
 
-An end-to-end, synthetic healthcare analytics platform that connects cloud data engineering, applied machine learning, and operational BI. The project is designed to show how raw clinical events become tested warehouse models, governed prediction outputs, and analytics for clinical, operational, and financial teams.
+A synthetic-data healthcare platform with source code for generation, cloud infrastructure, warehouse transformations, machine learning, and Power BI. See the repository’s build status for implemented components and verified execution results.
 
 > **Safety boundary:** All generated records are synthetic. They do not describe real people and must not be replaced with employer or patient data.
 

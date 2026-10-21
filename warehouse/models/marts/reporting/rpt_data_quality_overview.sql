@@ -27,8 +27,8 @@ ingest_runs as (
     select
         date(started_at) as run_date,
         count(*) as ingest_run_count,
-        countif(status = 'success') as ingest_run_success_count,
-        countif(status != 'success') as ingest_run_failure_count,
+        countif(lower(status) = 'success') as ingest_run_success_count,
+        countif(lower(status) != 'success') as ingest_run_failure_count,
         max(started_at) as last_ingest_run_at
     from {{ source('synthetic_raw', '_ingestion_runs') }}
     group by run_date
@@ -61,3 +61,5 @@ select
 from encounters e
 full outer join ingest_runs i on e.admission_date = i.run_date
 order by reporting_date desc
+
+

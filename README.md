@@ -15,10 +15,10 @@ An end-to-end, synthetic healthcare analytics platform that connects cloud data 
 
 ## Build status
 
-| Phase | Scope | Status |
+| Phase | Scope 
 |---|---|---|
 | 1. Data engineering | Synthetic data contract, generator, GCP infrastructure, ingestion, dbt warehouse 
-| 2. Data science | Time-aware features, 30-day readmission and length-of-stay models, observability 
+| 2. Data science | Time-aware features, 30-day readmission and length-of-stay models, observability
 | 3. BI development | Clinical, operational, financial, and pipeline-health Power BI hub 
 | 4. Case study | Architecture, trade-offs, runbook, and portfolio narrative 
 

@@ -1,4 +1,4 @@
-# Healthcare Data Platform Capstone
+# Healthcare Intelligence Platform
 
 An end-to-end, synthetic healthcare analytics platform that connects cloud data engineering, applied machine learning, and operational BI. The project is designed to show how raw clinical events become tested warehouse models, governed prediction outputs, and analytics for clinical, operational, and financial teams.
 

@@ -1,4 +1,4 @@
-# GCP setup (not yet applied)
+# GCP setup 
 
 The Terraform in `infra/terraform` is intentionally a plan-first scaffold. It creates a private landing bucket, separate raw/analytics/ML datasets, and a dedicated pipeline service account with dataset-scoped data editing plus BigQuery job and bucket-object permissions.
 

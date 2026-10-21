@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: ml
+    database: "{{ env_var('GCP_PROJECT_ID') }}"
+    schema: "{{ env_var('ML_PREDICTIONS_DATASET', 'healthcare_capstone_ml') }}"
+    description: >
+      ML prediction tables written by the Phase 2 training scripts in
+      src/healthcare_capstone/ml/. One row per test-fold encounter per model.
+    tables:
+      - name: ml_readmission_predictions
+        description: 30-day readmission probability per encounter from the held-out test fold.
+        columns:
+          - name: encounter_id
+            tests: [not_null, unique]
+          - name: readmission_probability
+            tests: [not_null]
+      - name: ml_length_of_stay_predictions
+        description: Predicted vs actual length of stay in hours for the held-out test fold.
+        columns:
+          - name: encounter_id
+            tests: [not_null, unique]
+          - name: length_of_stay_hours_predicted
+            tests: [not_null]

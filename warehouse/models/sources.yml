@@ -22,3 +22,18 @@ sources:
         columns:
           - name: claim_id
             tests: [not_null, unique]
+      - name: _ingestion_runs
+        identifier: _ingestion_runs
+        description: "Audit log of ingestion runs written by the atomic BigQuery loader."
+        columns:
+          - name: run_id
+            tests: [not_null, unique]
+          - name: started_at
+            tests: [not_null]
+          - name: status
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['success', 'failed']
+
+

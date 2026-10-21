@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+data/generated/
+target/
+dbt_packages/
+logs/
+.env
+
+warehouse/.user.yml

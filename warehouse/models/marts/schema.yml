@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: dim_patient
+    description: "One row per synthetic patient; attributes are intentionally minimal and non-identifying."
+    columns:
+      - name: patient_id
+        tests:
+          - not_null
+          - unique
+      - name: synthetic
+        tests:
+          - not_null
+
+  - name: fct_encounter_operations
+    description: "One row per synthetic encounter combining clinical, operational, financial, and pipeline-quality measures."
+    columns:
+      - name: encounter_id
+        tests:
+          - not_null
+          - unique
+      - name: patient_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_patient')
+              field: patient_id
+      - name: facility_id
+        tests:
+          - not_null
+      - name: length_of_stay_hours
+        tests:
+          - not_null
+      - name: admission_date
+        tests:
+          - not_null
+      - name: admission_ts
+        tests:
+          - not_null
+      - name: discharge_ts
+        tests:
+          - not_null
+      - name: synthetic
+        tests:
+          - not_null

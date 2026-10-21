@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: synthetic_raw
+    description: "Synthetic source data loaded by the capstone ingestion stage."
+    database: "{{ env_var('GCP_PROJECT_ID') }}"
+    schema: "{{ env_var('DBT_RAW_DATASET', 'healthcare_capstone_raw') }}"
+    tables:
+      - name: patients
+        columns:
+          - name: patient_id
+            tests: [not_null, unique]
+      - name: encounters
+        columns:
+          - name: encounter_id
+            tests: [not_null, unique]
+      - name: clinical_events
+        columns:
+          - name: event_id
+            tests: [not_null, unique]
+      - name: claims
+        columns:
+          - name: claim_id
+            tests: [not_null, unique]

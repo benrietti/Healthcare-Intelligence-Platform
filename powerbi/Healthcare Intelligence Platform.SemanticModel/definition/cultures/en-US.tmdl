@@ -1,0 +1,263 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dimfacility.facility_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimFacility",
+			          "ConceptualProperty": "facility_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Facility ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.average_predicted_readmission_risk": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "Average Predicted Readmission Risk"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Average Predicted Risk": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.scored_cohort_actual_readmission_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "Scored Cohort Actual Readmission Rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Actual Readmissions- Scored Cohort": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.los_mae_hours": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "LOS MAE Hours"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LOS Prediction Error - Hours": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.encounter_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "encounter_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Encounter ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.admission_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "admission_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Admission Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.readmitted_30d": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "readmitted_30d"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Readmitted 30D": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.readmission_probability": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "readmission_probability"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Readmission Probability": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.length_of_stay_hours": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "length_of_stay_hours"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LOS-Hours": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.length_of_stay_hours_predicted": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "length_of_stay_hours_predicted"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LOS Predicted": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "rpt_encounter_risk_scorecard.facility_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "rpt_encounter_risk_scorecard",
+			          "ConceptualProperty": "facility_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Facility ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dimserviceline.service_line": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimServiceLine",
+			          "ConceptualProperty": "service_line"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Service Line": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

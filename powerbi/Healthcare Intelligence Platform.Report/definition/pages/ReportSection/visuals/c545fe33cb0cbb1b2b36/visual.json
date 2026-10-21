@@ -1,0 +1,222 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "c545fe33cb0cbb1b2b36",
+  "position": {
+    "x": 685.71428571428578,
+    "y": 235.71428571428572,
+    "z": 10000,
+    "height": 222.61904761904762,
+    "width": 578.57142857142856
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimFacility"
+                    }
+                  },
+                  "Property": "facility_id"
+                }
+              },
+              "queryRef": "DimFacility.facility_id",
+              "active": true,
+              "displayName": "Facility ID"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Readmission Rate"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Readmission Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Average LOS Days"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Average LOS Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Total Paid"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Total Paid"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Total Encounters"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Total Encounters"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "rpt_encounter_risk_scorecard"
+                  }
+                },
+                "Property": "Total Encounters"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "referenceLine": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "displayName": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Median line 1'"
+                }
+              }
+            },
+            "value": {
+              "expr": {
+                "Aggregation": {
+                  "Expression": {
+                    "SelectRef": {
+                      "ExpressionName": "rpt_encounter_risk_scorecard.Total Encounters"
+                    }
+                  },
+                  "Function": 6
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "rpt_encounter_risk_scorecard.Total Encounters",
+            "id": "1"
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "concatenateLabels": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Encounters by Facility'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

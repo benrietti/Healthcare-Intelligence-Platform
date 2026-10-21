@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "d75c732109f945f09e50",
+  "position": {
+    "x": 150,
+    "y": 420.23809523809524,
+    "z": 2000,
+    "height": 300,
+    "width": 994.047619047619
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "facility_id"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.facility_id",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Average Predicted Readmission Risk"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Average Predicted Readmission Risk"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Readmission Scored Encounters"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Readmission Scored Encounters"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "rpt_encounter_risk_scorecard"
+                  }
+                },
+                "Property": "Average Predicted Readmission Risk"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

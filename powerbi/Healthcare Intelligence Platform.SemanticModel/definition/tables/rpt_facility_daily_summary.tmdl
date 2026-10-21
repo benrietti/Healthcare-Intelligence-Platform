@@ -1,0 +1,216 @@
+table rpt_facility_daily_summary
+	lineageTag: d5ced5ff-a096-4b55-9a95-a581d367f2c4
+
+	column admission_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 05ebaba7-672b-4e07-9324-ac7fe338cfb7
+		summarizeBy: none
+		sourceColumn: admission_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column facility_id
+		dataType: string
+		lineageTag: d8453871-384a-4c84-ae35-cadcffa26c1e
+		summarizeBy: none
+		sourceColumn: facility_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line
+		dataType: string
+		lineageTag: 413076a5-a040-453b-9860-4ad7d51b1324
+		summarizeBy: none
+		sourceColumn: service_line
+
+		annotation SummarizationSetBy = Automatic
+
+	column encounter_count
+		dataType: int64
+		formatString: 0
+		lineageTag: dbc122af-916d-4389-a264-1ed26b89fadf
+		summarizeBy: sum
+		sourceColumn: encounter_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column distinct_patient_count
+		dataType: int64
+		formatString: 0
+		lineageTag: d778e04e-7d97-42b5-8c79-55dab4aeb6cd
+		summarizeBy: sum
+		sourceColumn: distinct_patient_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmitted_30d_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 33404ab6-1f9a-4160-a1b5-95422a1c63bc
+		summarizeBy: sum
+		sourceColumn: readmitted_30d_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmitted_30d_rate
+		dataType: double
+		lineageTag: 1ac16852-57ed-4a49-a479-206c7ebd5630
+		summarizeBy: sum
+		sourceColumn: readmitted_30d_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column length_of_stay_hours_avg
+		dataType: double
+		lineageTag: 21059958-aae3-43fd-b46b-483926093085
+		summarizeBy: sum
+		sourceColumn: length_of_stay_hours_avg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column length_of_stay_hours_median
+		dataType: double
+		lineageTag: 1abb5a1e-3537-42c4-9bd5-6e32b5accc03
+		summarizeBy: sum
+		sourceColumn: length_of_stay_hours_median
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column length_of_stay_hours_p90
+		dataType: double
+		lineageTag: a1705860-d07f-4e88-b883-1795dde7ffc3
+		summarizeBy: sum
+		sourceColumn: length_of_stay_hours_p90
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column scored_readmission_encounter_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a1d510d-d6d7-4ddd-b0f5-6a15bf8a02ef
+		summarizeBy: sum
+		sourceColumn: scored_readmission_encounter_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmission_probability_avg
+		dataType: double
+		lineageTag: 121d522b-56b9-42fd-89c7-51839a22f610
+		summarizeBy: sum
+		sourceColumn: readmission_probability_avg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column scored_length_of_stay_encounter_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 6a992319-4214-4b68-827a-9f3eee6abc18
+		summarizeBy: sum
+		sourceColumn: scored_length_of_stay_encounter_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column length_of_stay_hours_predicted_avg
+		dataType: double
+		lineageTag: 37ebab5e-b5d5-411f-bd32-fb60436e156b
+		summarizeBy: sum
+		sourceColumn: length_of_stay_hours_predicted_avg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column length_of_stay_mae_hours
+		dataType: double
+		lineageTag: 80837acd-016c-4721-9206-eaf33981252f
+		summarizeBy: sum
+		sourceColumn: length_of_stay_mae_hours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column billed_amount_total
+		dataType: double
+		lineageTag: 6d5bde01-2700-413e-b874-d40fd3fa917f
+		summarizeBy: sum
+		sourceColumn: billed_amount_total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column paid_amount_total
+		dataType: double
+		lineageTag: 43fe21db-2e3a-4e07-ab43-4e5b7aec7c00
+		summarizeBy: sum
+		sourceColumn: paid_amount_total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column denied_claim_count_total
+		dataType: int64
+		formatString: 0
+		lineageTag: be700205-6adc-4136-893b-62fa7c93124b
+		summarizeBy: sum
+		sourceColumn: denied_claim_count_total
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_missing_timestamp_total
+		dataType: int64
+		formatString: 0
+		lineageTag: bf3691e6-1152-4c5f-89a0-3c6ed3a17206
+		summarizeBy: sum
+		sourceColumn: events_missing_timestamp_total
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_missing_department_total
+		dataType: int64
+		formatString: 0
+		lineageTag: 0981627b-eaa4-4ada-aace-fcc74798ddb9
+		summarizeBy: sum
+		sourceColumn: events_missing_department_total
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_arriving_over_24h_late_total
+		dataType: int64
+		formatString: 0
+		lineageTag: a4510a05-8a81-4361-81d3-655ece2d1cac
+		summarizeBy: sum
+		sourceColumn: events_arriving_over_24h_late_total
+
+		annotation SummarizationSetBy = Automatic
+
+	partition rpt_facility_daily_summary-a9285cc0-ef94-41e9-a4c6-89e942fc9e26 = m
+		mode: import
+		source =
+				let
+				    Source = GoogleBigQuery.Database(),
+				    #"healthcare-intelligence-512118" = Source{[Name="healthcare-intelligence-512118"]}[Data],
+				    healthcare_capstone_analytics_Schema = #"healthcare-intelligence-512118"{[Name="healthcare_capstone_analytics",Kind="Schema"]}[Data],
+				    rpt_facility_daily_summary_View = healthcare_capstone_analytics_Schema{[Name="rpt_facility_daily_summary",Kind="View"]}[Data]
+				in
+				    rpt_facility_daily_summary_View
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

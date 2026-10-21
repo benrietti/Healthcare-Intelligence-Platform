@@ -1,0 +1,169 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "6d7d440bb28ef4e1c295",
+  "position": {
+    "x": 17.857142857142858,
+    "y": 471.42857142857144,
+    "z": 11000,
+    "height": 248.80952380952382,
+    "width": 1246.4285714285716
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimFacility"
+                    }
+                  },
+                  "Property": "facility_id"
+                }
+              },
+              "queryRef": "DimFacility.facility_id",
+              "active": true,
+              "displayName": "Facility ID"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Total Encounters"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Total Encounters"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Unique Patients"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Unique Patients"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Readmission Rate"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Readmission Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Average LOS Days"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Average LOS Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Total Billed"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Total Billed"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Total Paid"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Total Paid"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Facility Performance'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

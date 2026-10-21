@@ -1,0 +1,526 @@
+table rpt_encounter_risk_scorecard
+	lineageTag: 7145e512-75d7-4cfd-b4ae-b6fec70051b1
+
+	measure 'Total Encounters' =
+			
+			COUNTROWS('rpt_encounter_risk_scorecard')
+		formatString: 0
+		lineageTag: 2fb0d303-fe6c-4095-9455-e898ef75b9ac
+
+	measure 'Unique Patients' =
+			
+			DISTINCTCOUNT('rpt_encounter_risk_scorecard'[patient_id])
+		formatString: 0
+		lineageTag: 8eb5dfc6-0fb4-4e93-8c50-13fb1e7544a4
+
+	measure 'Readmitted Encounters' =
+			
+			CALCULATE(
+			    [Total Encounters],
+			    'rpt_encounter_risk_scorecard'[readmitted_30d] = TRUE()
+			)
+		formatString: 0
+		lineageTag: ab6cdb7a-298e-4c5c-ae5e-4442f22a118a
+
+	measure 'Readmission Rate' =
+			
+			DIVIDE([Readmitted Encounters], [Total Encounters])
+		lineageTag: 3ab3bd4e-c544-4066-9e77-f730456e415f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average LOS Hours' =
+			
+			AVERAGE('rpt_encounter_risk_scorecard'[length_of_stay_hours])
+		lineageTag: 44ab385d-4863-4385-af43-a6a5c45c29ab
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average LOS Days' =
+			
+			DIVIDE([Average LOS Hours], 24)
+		lineageTag: 19170dca-4383-4077-bdaf-d1e5c6d43cc1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Billed' =
+			
+			SUM('rpt_encounter_risk_scorecard'[billed_amount])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 7e983492-1acc-4b19-8276-715a7bcc21c5
+
+		changedProperty = FormatString
+
+	measure 'Total Allowed' =
+			
+			SUM('rpt_encounter_risk_scorecard'[allowed_amount])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 191eeb80-33fc-4a75-b115-99dc6f19af2e
+
+		changedProperty = FormatString
+
+	measure 'Total Paid' =
+			
+			SUM('rpt_encounter_risk_scorecard'[paid_amount])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: c48abbfa-8185-4b2b-a1e2-06e4563aa9d1
+
+		changedProperty = FormatString
+
+	measure 'Denied Claims' =
+			
+			SUM('rpt_encounter_risk_scorecard'[denied_claim_count])
+		formatString: 0
+		lineageTag: 60b0e39d-7b14-4f9a-ae56-25ca1ab929bb
+
+	measure 'Readmission Scored Encounters' =
+			
+			COUNT('rpt_encounter_risk_scorecard'[readmission_probability])
+		formatString: 0
+		lineageTag: 989d7efc-ac36-484e-9db4-02f2b51c906b
+
+	measure 'Readmission Scoring Coverage' =
+			
+			DIVIDE([Readmission Scored Encounters], [Total Encounters])
+		lineageTag: b606f1db-5a52-4319-9b11-400074b88148
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Predicted Readmission Risk' =
+			
+			AVERAGE('rpt_encounter_risk_scorecard'[readmission_probability])
+		lineageTag: 595aa5c8-5e4b-4168-ba2d-eb13a5899217
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'LOS Scored Encounters' =
+			
+			COUNT('rpt_encounter_risk_scorecard'[length_of_stay_hours_predicted])
+		formatString: 0
+		lineageTag: 60632af4-9a9b-422d-a98f-3aa99a398cbe
+
+	measure 'LOS Scoring Coverage' =
+			
+			DIVIDE([LOS Scored Encounters], [Total Encounters])
+		lineageTag: 0c4c1b4d-99e0-4f58-8a9f-e3d2159f5808
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Predicted LOS Hours' =
+			
+			AVERAGE('rpt_encounter_risk_scorecard'[length_of_stay_hours_predicted])
+		lineageTag: f3c6b640-c417-47ee-9853-45cbe5b30d17
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'LOS MAE Hours' =
+			
+			AVERAGEX(
+			    FILTER(
+			        'rpt_encounter_risk_scorecard',
+			        NOT ISBLANK('rpt_encounter_risk_scorecard'[length_of_stay_hours_predicted])
+			            && NOT ISBLANK('rpt_encounter_risk_scorecard'[length_of_stay_hours])
+			    ),
+			    ABS(
+			        'rpt_encounter_risk_scorecard'[length_of_stay_hours_predicted]
+			            - 'rpt_encounter_risk_scorecard'[length_of_stay_hours]
+			    )
+			)
+		lineageTag: 8d09070b-0056-4a77-b82a-3169c8f83154
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Clinical Events' =
+			
+			SUM('rpt_encounter_risk_scorecard'[event_count])
+		formatString: 0
+		lineageTag: 2c90c587-94c3-453d-a172-499d3c599b6e
+
+	measure 'Events Missing Timestamp' =
+			
+			SUM('rpt_encounter_risk_scorecard'[events_missing_timestamp])
+		formatString: 0
+		lineageTag: 138d273c-8385-4bec-9b9a-4673e7de10d0
+
+	measure 'Missing Timestamp Rate' =
+			
+			DIVIDE([Events Missing Timestamp], [Total Clinical Events])
+		lineageTag: 754ccc16-ba10-40eb-bea5-49aa623b2054
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Events Missing Department' =
+			
+			SUM('rpt_encounter_risk_scorecard'[events_missing_department])
+		formatString: 0
+		lineageTag: e8de18c2-3b22-4de8-baf1-6180e8424504
+
+	measure 'Missing Department Rate' =
+			
+			DIVIDE([Events Missing Department], [Total Clinical Events])
+		lineageTag: fc793f0b-1552-49b9-8086-a70da70ee32c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Events Over 24 Hours Late' =
+			
+			SUM('rpt_encounter_risk_scorecard'[events_arriving_over_24h_late])
+		formatString: 0
+		lineageTag: a588d774-6b64-43a1-9583-5f97a6eb715a
+
+	measure 'Late Arrival Rate' =
+			
+			DIVIDE([Events Over 24 Hours Late], [Total Clinical Events])
+		lineageTag: 6fb804fd-4efe-424c-b878-4fbe4e0e13ff
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Scored Cohort Actual Readmission Rate' =
+			
+			VAR ScoredEncounters =
+			    FILTER(
+			        'rpt_encounter_risk_scorecard',
+			        NOT ISBLANK(
+			            'rpt_encounter_risk_scorecard'[readmission_probability]
+			        )
+			    )
+			RETURN
+			    DIVIDE(
+			        COUNTROWS(
+			            FILTER(
+			                ScoredEncounters,
+			                'rpt_encounter_risk_scorecard'[readmitted_30d] = TRUE()
+			            )
+			        ),
+			        COUNTROWS(ScoredEncounters)
+			    )
+		lineageTag: 6e27b84a-87a0-4c32-8443-cfbeb67e6158
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Scored Cohort Actual LOS Hours' =
+			
+			AVERAGEX(
+			    FILTER(
+			        'rpt_encounter_risk_scorecard',
+			        NOT ISBLANK(
+			            'rpt_encounter_risk_scorecard'[length_of_stay_hours_predicted]
+			        )
+			    ),
+			    'rpt_encounter_risk_scorecard'[length_of_stay_hours]
+			)
+		lineageTag: f4058e67-fb27-4780-84cb-76e92fbc1c7b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column encounter_id
+		dataType: string
+		lineageTag: f00e3d94-7f2a-4c16-9a6a-f338ca90014d
+		summarizeBy: none
+		sourceColumn: encounter_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_id
+		dataType: string
+		lineageTag: d5df98e4-7ccd-495f-a9a3-c61b1b4e3081
+		summarizeBy: none
+		sourceColumn: patient_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column facility_id
+		dataType: string
+		lineageTag: c55a3c2c-2940-413a-89bf-509660544d75
+		summarizeBy: none
+		sourceColumn: facility_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_ts
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 06e65abf-8172-422e-8e96-8401ab0c0661
+		summarizeBy: none
+		sourceColumn: admission_ts
+
+		variation Variation
+			isDefault
+			relationship: 6f55f88d-0fbf-488c-b3d3-07e775ebe08e
+			defaultHierarchy: LocalDateTable_cad775b5-b283-40e4-bd7c-c1d19a91f91b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column admission_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a0195e6e-8ce3-4e01-b831-549b8f40bc7c
+		summarizeBy: none
+		sourceColumn: admission_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column discharge_ts
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1263d994-bab1-417f-b4a3-bc79d54a16e3
+		summarizeBy: none
+		sourceColumn: discharge_ts
+
+		variation Variation
+			isDefault
+			relationship: f6e24d3d-3968-4756-8f46-3fa2c729a147
+			defaultHierarchy: LocalDateTable_f22c6199-95bb-4464-8416-2e2efec5c557.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_line
+		dataType: string
+		lineageTag: b93fb269-190f-4591-aee8-d3720bd7a810
+		summarizeBy: none
+		sourceColumn: service_line
+
+		annotation SummarizationSetBy = Automatic
+
+	column primary_diagnosis_group
+		dataType: string
+		lineageTag: 9697259d-fc64-40f5-a427-6c881293b2b6
+		summarizeBy: none
+		sourceColumn: primary_diagnosis_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column payer
+		dataType: string
+		lineageTag: 2d0a11cb-ad74-48aa-bfbc-3e6e326886ea
+		summarizeBy: none
+		sourceColumn: payer
+
+		annotation SummarizationSetBy = Automatic
+
+	column discharge_disposition
+		dataType: string
+		lineageTag: 4751b922-4450-4006-9c8b-75f380c5d3f9
+		summarizeBy: none
+		sourceColumn: discharge_disposition
+
+		annotation SummarizationSetBy = Automatic
+
+	column sex
+		dataType: string
+		lineageTag: 9c6d6ee7-1e1c-44e9-a567-049426130f69
+		summarizeBy: none
+		sourceColumn: sex
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_state
+		dataType: string
+		lineageTag: ae6fc405-3d30-480c-a9eb-44bcc37c204e
+		summarizeBy: none
+		sourceColumn: home_state
+
+		annotation SummarizationSetBy = Automatic
+
+	column birth_year
+		dataType: int64
+		formatString: 0
+		lineageTag: 4bf305ea-bb85-4f72-9843-cac28c40f7c3
+		summarizeBy: sum
+		sourceColumn: birth_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_age_at_admission
+		dataType: int64
+		formatString: 0
+		lineageTag: fa181f3b-a968-44cc-b988-327124bfa99b
+		summarizeBy: sum
+		sourceColumn: patient_age_at_admission
+
+		annotation SummarizationSetBy = Automatic
+
+	column length_of_stay_hours
+		dataType: double
+		lineageTag: 341bc7fa-0a40-4b75-9031-1bb46bfa57d8
+		summarizeBy: sum
+		sourceColumn: length_of_stay_hours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column event_count
+		dataType: int64
+		formatString: 0
+		lineageTag: b683f230-1439-4aec-b92c-15dda45b06e9
+		summarizeBy: sum
+		sourceColumn: event_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_missing_timestamp
+		dataType: int64
+		formatString: 0
+		lineageTag: 29f3a089-00cb-483f-a467-641324a442c0
+		summarizeBy: sum
+		sourceColumn: events_missing_timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_missing_department
+		dataType: int64
+		formatString: 0
+		lineageTag: 9b654c08-3c7a-4d32-a3ac-ca57b8b9f378
+		summarizeBy: sum
+		sourceColumn: events_missing_department
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_arriving_over_24h_late
+		dataType: int64
+		formatString: 0
+		lineageTag: bf17a4d5-6b61-4af7-a72b-3371366770ac
+		summarizeBy: sum
+		sourceColumn: events_arriving_over_24h_late
+
+		annotation SummarizationSetBy = Automatic
+
+	column billed_amount
+		dataType: double
+		lineageTag: aad9fd7b-7290-4ad4-b232-316ed2ff0f57
+		summarizeBy: sum
+		sourceColumn: billed_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column allowed_amount
+		dataType: double
+		lineageTag: 931a6083-f5c0-4b44-9c40-8d9eac401870
+		summarizeBy: sum
+		sourceColumn: allowed_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column paid_amount
+		dataType: double
+		lineageTag: 689b7e03-c160-474b-a9cf-5429cc3891d2
+		summarizeBy: sum
+		sourceColumn: paid_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column denied_claim_count
+		dataType: int64
+		formatString: 0
+		lineageTag: accfe71c-f5c4-4051-b052-1c91696312be
+		summarizeBy: sum
+		sourceColumn: denied_claim_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmitted_30d
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1c13ad71-f869-4793-9d2c-7b5f9f082411
+		summarizeBy: none
+		sourceColumn: readmitted_30d
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmission_probability
+		dataType: double
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: d56b60ae-1591-4efa-bf5c-7973385c1c06
+		summarizeBy: sum
+		sourceColumn: readmission_probability
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmission_model_name
+		dataType: string
+		lineageTag: 866e34b8-11ed-4a31-9dac-97e88cbe78c6
+		summarizeBy: none
+		sourceColumn: readmission_model_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column readmission_scored_at
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d99c7474-eb73-45e1-9042-93e85d2aabc7
+		summarizeBy: none
+		sourceColumn: readmission_scored_at
+
+		variation Variation
+			isDefault
+			relationship: c4d402a7-ebb3-40bf-8ad9-fde0959daeb1
+			defaultHierarchy: LocalDateTable_80d88d0b-fe05-4c87-aab0-6038da330b8c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column length_of_stay_hours_predicted
+		dataType: double
+		lineageTag: d8d42717-ad25-4678-aecb-25aca242c098
+		summarizeBy: sum
+		sourceColumn: length_of_stay_hours_predicted
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column length_of_stay_model_name
+		dataType: string
+		lineageTag: bfae30ca-7849-4f99-802e-a7e1d70a72a2
+		summarizeBy: none
+		sourceColumn: length_of_stay_model_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column length_of_stay_scored_at
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d9342339-6ed1-45cb-8374-db53360a81a4
+		summarizeBy: none
+		sourceColumn: length_of_stay_scored_at
+
+		variation Variation
+			isDefault
+			relationship: 0f7b5978-9ffd-4942-9e1e-dc8e87380afd
+			defaultHierarchy: LocalDateTable_f4e2ffa3-c751-40f7-bc8a-80e2d14d4cf6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column length_of_stay_prediction_error_hours
+		dataType: double
+		lineageTag: fec85a8e-6f8a-4e53-afa8-f69a342a701c
+		summarizeBy: sum
+		sourceColumn: length_of_stay_prediction_error_hours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition rpt_encounter_risk_scorecard-b927d0a9-20a2-44d9-a057-8e613d8cc014 = m
+		mode: import
+		source =
+				let
+				    Source = GoogleBigQuery.Database(),
+				    #"healthcare-intelligence-512118" = Source{[Name="healthcare-intelligence-512118"]}[Data],
+				    healthcare_capstone_analytics_Schema = #"healthcare-intelligence-512118"{[Name="healthcare_capstone_analytics",Kind="Schema"]}[Data],
+				    rpt_encounter_risk_scorecard_View = healthcare_capstone_analytics_Schema{[Name="rpt_encounter_risk_scorecard",Kind="View"]}[Data]
+				in
+				    rpt_encounter_risk_scorecard_View
+
+	annotation PBI_ResultType = Table
+

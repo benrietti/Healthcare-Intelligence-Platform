@@ -1,0 +1,70 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "4867966c252e952650f6",
+  "position": {
+    "x": 408.72513301788825,
+    "y": 116.48080008370536,
+    "z": 0,
+    "height": 101.19047619047619,
+    "width": 180.95238095238096
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "Average Predicted Readmission Risk"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.Average Predicted Readmission Risk",
+              "displayName": "Average Predicted Risk"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "rpt_encounter_risk_scorecard"
+                  }
+                },
+                "Property": "Average Predicted Readmission Risk"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

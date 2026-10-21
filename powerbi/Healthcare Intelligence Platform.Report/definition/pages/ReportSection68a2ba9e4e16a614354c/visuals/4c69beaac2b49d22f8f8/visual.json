@@ -1,0 +1,221 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "4c69beaac2b49d22f8f8",
+  "position": {
+    "x": 126.19047619047619,
+    "y": 496.42857142857144,
+    "z": 5000,
+    "height": 223.80952380952382,
+    "width": 955.952380952381
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_data_quality_overview"
+                    }
+                  },
+                  "Property": "reporting_date"
+                }
+              },
+              "queryRef": "rpt_data_quality_overview.reporting_date"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_data_quality_overview"
+                    }
+                  },
+                  "Property": "Total Ingestion Runs"
+                }
+              },
+              "queryRef": "rpt_data_quality_overview.Total Ingestion Runs"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_data_quality_overview"
+                    }
+                  },
+                  "Property": "Successful Ingestion Runs"
+                }
+              },
+              "queryRef": "rpt_data_quality_overview.Successful Ingestion Runs"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_data_quality_overview"
+                    }
+                  },
+                  "Property": "Failed Ingestion Runs"
+                }
+              },
+              "queryRef": "rpt_data_quality_overview.Failed Ingestion Runs"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_data_quality_overview"
+                    }
+                  },
+                  "Property": "Ingestion Success Rate"
+                }
+              },
+              "queryRef": "rpt_data_quality_overview.Ingestion Success Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_data_quality_overview"
+                    }
+                  },
+                  "Property": "Last Ingestion Started At"
+                }
+              },
+              "queryRef": "rpt_data_quality_overview.Last Ingestion Started At"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "rpt_data_quality_overview"
+                  }
+                },
+                "Property": "reporting_date"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ingestion Runs by Date'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1f12cbf80347755f38e8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "rpt_encounter_risk_scorecard"
+              }
+            },
+            "Property": "readmission_probability"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "f3547bf0eed2fc91a76e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "rpt_data_quality_overview"
+              }
+            },
+            "Property": "Total Ingestion Runs"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "r",
+              "Entity": "rpt_data_quality_overview",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "r"
+                        }
+                      },
+                      "Property": "Total Ingestion Runs"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

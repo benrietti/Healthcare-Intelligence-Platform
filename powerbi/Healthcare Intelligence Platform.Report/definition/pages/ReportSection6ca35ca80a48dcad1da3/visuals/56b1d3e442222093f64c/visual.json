@@ -1,0 +1,70 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "56b1d3e442222093f64c",
+  "position": {
+    "x": 924.598148890904,
+    "y": 114.09984770275298,
+    "z": 6000,
+    "height": 101.19047619047619,
+    "width": 232.14285714285714
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "LOS MAE Hours"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.LOS MAE Hours",
+              "displayName": "LOS Prediction Error - Hours"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "rpt_encounter_risk_scorecard"
+                  }
+                },
+                "Property": "LOS MAE Hours"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

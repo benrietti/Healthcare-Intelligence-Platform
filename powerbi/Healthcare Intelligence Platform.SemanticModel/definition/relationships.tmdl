@@ -1,0 +1,63 @@
+relationship 6f55f88d-0fbf-488c-b3d3-07e775ebe08e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: rpt_encounter_risk_scorecard.admission_ts
+	toColumn: LocalDateTable_cad775b5-b283-40e4-bd7c-c1d19a91f91b.Date
+
+relationship f6e24d3d-3968-4756-8f46-3fa2c729a147
+	joinOnDateBehavior: datePartOnly
+	fromColumn: rpt_encounter_risk_scorecard.discharge_ts
+	toColumn: LocalDateTable_f22c6199-95bb-4464-8416-2e2efec5c557.Date
+
+relationship c4d402a7-ebb3-40bf-8ad9-fde0959daeb1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: rpt_encounter_risk_scorecard.readmission_scored_at
+	toColumn: LocalDateTable_80d88d0b-fe05-4c87-aab0-6038da330b8c.Date
+
+relationship 0f7b5978-9ffd-4942-9e1e-dc8e87380afd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: rpt_encounter_risk_scorecard.length_of_stay_scored_at
+	toColumn: LocalDateTable_f4e2ffa3-c751-40f7-bc8a-80e2d14d4cf6.Date
+
+relationship f5e825ac-cdbe-49e0-bb68-ca6f99cb6299
+	joinOnDateBehavior: datePartOnly
+	fromColumn: rpt_data_quality_overview.last_ingest_run_at
+	toColumn: LocalDateTable_d006a2ad-aeca-401d-856c-2dec0340b43e.Date
+
+relationship 7d0e1cd1-6800-4ea8-8be4-1caf1de328e7
+	fromColumn: rpt_encounter_risk_scorecard.admission_date
+	toColumn: DimDate.Date
+
+relationship 54241703-9725-4981-ab63-929edf77a33e
+	fromColumn: rpt_facility_daily_summary.admission_date
+	toColumn: DimDate.Date
+
+relationship 1947c1f0-87b6-4a6c-a7eb-909d3da387ab
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimDate.Date
+	toColumn: LocalDateTable_70c2590c-507b-457e-b6e7-6bf73da41765.Date
+
+relationship 222bb95b-4a50-4541-a7d5-bcab4c3c2782
+	fromColumn: rpt_data_quality_overview.reporting_date
+	toColumn: DimDate.Date
+
+relationship bb1b8876-c267-4c15-a079-9fe6e90d23a5
+	fromColumn: rpt_encounter_risk_scorecard.facility_id
+	toColumn: DimFacility.facility_id
+
+relationship da37422f-efcc-4135-ab06-242a090d4f7d
+	fromColumn: rpt_facility_daily_summary.facility_id
+	toColumn: DimFacility.facility_id
+
+relationship 078edd7f-f8ba-4681-acd9-33bbebe1cd13
+	fromColumn: rpt_encounter_risk_scorecard.service_line
+	toColumn: DimServiceLine.service_line
+
+relationship badc2c6d-10d2-4c51-99a2-d590eef5651a
+	fromColumn: rpt_facility_daily_summary.service_line
+	toColumn: DimServiceLine.service_line
+
+relationship 6ed8bd4c-127e-4af6-b6b3-efd61122bef2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: refresh_dim.refresh_dim
+	toColumn: LocalDateTable_078ddddb-5831-4703-a44f-ec5b76952791.Date
+

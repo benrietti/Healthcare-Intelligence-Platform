@@ -1,0 +1,33 @@
+table DimServiceLine
+	lineageTag: 5ed2f700-be3f-4574-bd32-30cf78596033
+
+	column service_line
+		lineageTag: a97fd7a0-6a32-445e-b72b-a6496ebb7499
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [service_line]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimServiceLine-1fb3146e-52d0-46de-bb20-f019bf915da0 = calculated
+		mode: import
+		source =
+				
+				FILTER(
+				    DISTINCT(
+				        UNION(
+				            SELECTCOLUMNS(
+				                'rpt_encounter_risk_scorecard',
+				                "service_line", 'rpt_encounter_risk_scorecard'[service_line]
+				            ),
+				            SELECTCOLUMNS(
+				                'rpt_facility_daily_summary',
+				                "service_line", 'rpt_facility_daily_summary'[service_line]
+				            )
+				        )
+				    ),
+				    NOT ISBLANK([service_line])
+				)
+
+	annotation PBI_Id = ad6177e5d1dc49b39e2042688339cf70
+

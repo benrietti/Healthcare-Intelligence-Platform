@@ -1,0 +1,244 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "a9cd2c132cd36fcad290",
+  "position": {
+    "x": 17.857142857142858,
+    "y": 471.42857142857144,
+    "z": 8000,
+    "height": 248.80952380952382,
+    "width": 1246.4285714285716
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "encounter_id"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.encounter_id",
+              "displayName": "Encounter ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimFacility"
+                    }
+                  },
+                  "Property": "facility_id"
+                }
+              },
+              "queryRef": "DimFacility.facility_id",
+              "displayName": "Facility ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "admission_date"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.admission_date",
+              "displayName": "Admission Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimServiceLine"
+                    }
+                  },
+                  "Property": "service_line"
+                }
+              },
+              "queryRef": "DimServiceLine.service_line",
+              "displayName": "Service Line"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "readmitted_30d"
+                }
+              },
+              "queryRef": "rpt_encounter_risk_scorecard.readmitted_30d",
+              "displayName": "Readmitted 30D"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "readmission_probability"
+                }
+              },
+              "queryRef": "Sum(rpt_encounter_risk_scorecard.readmission_probability)",
+              "displayName": "Readmission Probability"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "length_of_stay_hours"
+                }
+              },
+              "queryRef": "Sum(rpt_encounter_risk_scorecard.length_of_stay_hours)",
+              "displayName": "LOS-Hours"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_encounter_risk_scorecard"
+                    }
+                  },
+                  "Property": "length_of_stay_hours_predicted"
+                }
+              },
+              "queryRef": "Sum(rpt_encounter_risk_scorecard.length_of_stay_hours_predicted)",
+              "displayName": "LOS Predicted"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "rpt_encounter_risk_scorecard"
+                  }
+                },
+                "Property": "encounter_id"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Readmission-Scored Encounter Details'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e501f596cc4cb27500ef",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "rpt_encounter_risk_scorecard"
+              }
+            },
+            "Property": "readmission_probability"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "r",
+              "Entity": "rpt_encounter_risk_scorecard",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "r"
+                            }
+                          },
+                          "Property": "readmission_probability"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

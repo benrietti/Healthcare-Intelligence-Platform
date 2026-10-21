@@ -1,0 +1,185 @@
+table rpt_data_quality_overview
+	lineageTag: 8861117a-7edf-4178-86ba-5ec40a8b22d3
+
+	measure 'Total Ingestion Runs' =
+			
+			SUM('rpt_data_quality_overview'[ingest_run_count])
+		formatString: 0
+		lineageTag: eb8cd8fd-2ff3-43d1-9c88-b45aa21aa010
+
+	measure 'Successful Ingestion Runs' =
+			
+			SUM('rpt_data_quality_overview'[ingest_run_success_count])
+		formatString: 0
+		lineageTag: 02afeef1-be18-4751-803e-3bea40e40467
+
+	measure 'Failed Ingestion Runs' =
+			
+			SUM('rpt_data_quality_overview'[ingest_run_failure_count])
+		formatString: 0
+		lineageTag: 5d598c79-03ae-48f9-8bb9-a439617b9a4a
+
+	measure 'Ingestion Success Rate' =
+			
+			DIVIDE([Successful Ingestion Runs], [Total Ingestion Runs])
+		lineageTag: 96aa2562-a364-4db1-8dd1-bd20423ecc59
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Last Ingestion Started At' =
+			
+			MAX('rpt_data_quality_overview'[last_ingest_run_at])
+		formatString: General Date
+		lineageTag: 50a29017-d58e-44c0-8a43-7dc30834033d
+
+	column reporting_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4aa25033-f258-4e64-a635-9b3133afa8ad
+		summarizeBy: none
+		sourceColumn: reporting_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column encounter_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 901506ad-13d1-4b94-ad75-9fea87fd938c
+		summarizeBy: sum
+		sourceColumn: encounter_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column clinical_event_count
+		dataType: int64
+		formatString: 0
+		lineageTag: e158330b-c5d1-4dc6-9eed-27b1ded60cdb
+		summarizeBy: sum
+		sourceColumn: clinical_event_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_missing_timestamp
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e4d5c16-db81-432b-b2a7-33b823983c68
+		summarizeBy: sum
+		sourceColumn: events_missing_timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_missing_department
+		dataType: int64
+		formatString: 0
+		lineageTag: 175d4650-d8ce-4936-af11-2334caa0a59e
+		summarizeBy: sum
+		sourceColumn: events_missing_department
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_arriving_over_24h_late
+		dataType: int64
+		formatString: 0
+		lineageTag: 39cee4d1-9da3-41bf-ac76-ff787e4db251
+		summarizeBy: sum
+		sourceColumn: events_arriving_over_24h_late
+
+		annotation SummarizationSetBy = Automatic
+
+	column denied_claim_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 65969e1f-ee08-4645-af54-746440753046
+		summarizeBy: sum
+		sourceColumn: denied_claim_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column events_missing_timestamp_rate
+		dataType: double
+		lineageTag: 84eb84db-8541-4483-9026-52c59178225a
+		summarizeBy: sum
+		sourceColumn: events_missing_timestamp_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column events_missing_department_rate
+		dataType: double
+		lineageTag: 8e3fa0b6-6478-42b3-ad18-aefad7312c82
+		summarizeBy: sum
+		sourceColumn: events_missing_department_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column events_arriving_over_24h_late_rate
+		dataType: double
+		lineageTag: 6cb578f4-5921-4843-a137-3f986919a6d9
+		summarizeBy: sum
+		sourceColumn: events_arriving_over_24h_late_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ingest_run_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ec4ac9d-c848-4fca-958f-9b3142beaba3
+		summarizeBy: sum
+		sourceColumn: ingest_run_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column ingest_run_success_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 00c51b96-573a-4cbc-a179-568fc355abf6
+		summarizeBy: sum
+		sourceColumn: ingest_run_success_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column ingest_run_failure_count
+		dataType: int64
+		formatString: 0
+		lineageTag: e1c7d482-b2af-4ec0-9e62-9fe0939f66d5
+		summarizeBy: sum
+		sourceColumn: ingest_run_failure_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_ingest_run_at
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3c882818-9c5a-4a30-a928-101a0f622bf2
+		summarizeBy: none
+		sourceColumn: last_ingest_run_at
+
+		variation Variation
+			isDefault
+			relationship: f5e825ac-cdbe-49e0-bb68-ca6f99cb6299
+			defaultHierarchy: LocalDateTable_d006a2ad-aeca-401d-856c-2dec0340b43e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition rpt_data_quality_overview-b673b460-d94c-441b-999c-03b42d9efa25 = m
+		mode: import
+		source =
+				let
+				    Source = GoogleBigQuery.Database(),
+				    #"healthcare-intelligence-512118" = Source{[Name="healthcare-intelligence-512118"]}[Data],
+				    healthcare_capstone_analytics_Schema = #"healthcare-intelligence-512118"{[Name="healthcare_capstone_analytics",Kind="Schema"]}[Data],
+				    rpt_data_quality_overview_View = healthcare_capstone_analytics_Schema{[Name="rpt_data_quality_overview",Kind="View"]}[Data]
+				in
+				    rpt_data_quality_overview_View
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

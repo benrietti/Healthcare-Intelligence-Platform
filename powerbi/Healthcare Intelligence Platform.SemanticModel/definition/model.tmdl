@@ -1,0 +1,32 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["rpt_facility_daily_summary","rpt_encounter_risk_scorecard","rpt_data_quality_overview","refresh_dim"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_28dd4fab-181b-4a1d-9be0-b7398cd27ee1
+ref table rpt_facility_daily_summary
+ref table rpt_encounter_risk_scorecard
+ref table LocalDateTable_cad775b5-b283-40e4-bd7c-c1d19a91f91b
+ref table LocalDateTable_f22c6199-95bb-4464-8416-2e2efec5c557
+ref table LocalDateTable_80d88d0b-fe05-4c87-aab0-6038da330b8c
+ref table LocalDateTable_f4e2ffa3-c751-40f7-bc8a-80e2d14d4cf6
+ref table rpt_data_quality_overview
+ref table LocalDateTable_d006a2ad-aeca-401d-856c-2dec0340b43e
+ref table DimDate
+ref table LocalDateTable_70c2590c-507b-457e-b6e7-6bf73da41765
+ref table DimFacility
+ref table DimServiceLine
+ref table refresh_dim
+ref table LocalDateTable_078ddddb-5831-4703-a44f-ec5b76952791
+
+ref cultureInfo en-US
+

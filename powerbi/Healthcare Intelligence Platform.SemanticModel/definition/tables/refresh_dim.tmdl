@@ -1,0 +1,39 @@
+table refresh_dim
+	lineageTag: b9654073-542e-4375-bd7d-fc0449d05672
+
+	column refresh_dim
+		dataType: dateTime
+		formatString: DDMMYYYY
+		lineageTag: 0bf2277c-39b6-46fa-8d74-13e63a7a255b
+		summarizeBy: none
+		sourceColumn: refresh_dim
+
+		variation Variation
+			isDefault
+			relationship: 6ed8bd4c-127e-4af6-b6b3-efd61122bef2
+			defaultHierarchy: LocalDateTable_078ddddb-5831-4703-a44f-ec5b76952791.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	partition refresh_dim-47358cd1-72ba-44e0-84b4-621b48e76bab = m
+		mode: import
+		source =
+				let
+				    Source = DateTime.LocalNow()
+				= DateTime.LocalNow()
+				= DateTime.LocalNow()
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Logical
+

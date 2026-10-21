@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Healthcare Intelligence Platform"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8eb6b028-9e28-40f4-99ef-a2cb15a932ee"
+  }
+}

@@ -1,0 +1,33 @@
+table DimFacility
+	lineageTag: 981e1e1c-bad4-4c98-a675-30c9cc81db39
+
+	column facility_id
+		lineageTag: 539dcf22-c138-4f49-81cb-62f1a882c277
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [facility_id]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimFacility-4691a9fb-87a9-4fce-88ae-1ee17a9b2069 = calculated
+		mode: import
+		source =
+				
+				FILTER(
+				    DISTINCT(
+				        UNION(
+				            SELECTCOLUMNS(
+				                'rpt_encounter_risk_scorecard',
+				                "facility_id", 'rpt_encounter_risk_scorecard'[facility_id]
+				            ),
+				            SELECTCOLUMNS(
+				                'rpt_facility_daily_summary',
+				                "facility_id", 'rpt_facility_daily_summary'[facility_id]
+				            )
+				        )
+				    ),
+				    NOT ISBLANK([facility_id])
+				)
+
+	annotation PBI_Id = 8acc2850561645a3a808cc217552c974
+

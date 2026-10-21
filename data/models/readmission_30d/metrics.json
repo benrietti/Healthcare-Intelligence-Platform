@@ -1,0 +1,19 @@
+{
+  "model": "readmission_30d",
+  "trained_at": "2026-10-21T13:34:25.586269+00:00",
+  "cutoff_ts": "2025-06-06T09:36:00+00:00",
+  "train": {
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.0005473301218423039,
+    "positive_rate": 0.0847457627118644,
+    "n_samples": 531
+  },
+  "test": {
+    "roc_auc": 0.747,
+    "pr_auc": 0.18798466857276228,
+    "brier_score": 0.057369567128787054,
+    "positive_rate": 0.06015037593984962,
+    "n_samples": 133
+  }
+}

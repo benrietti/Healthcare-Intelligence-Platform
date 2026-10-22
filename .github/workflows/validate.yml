@@ -1,0 +1,64 @@
+name: Validate synthetic platform
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  local-validation:
+    runs-on: ubuntu-latest
+    env:
+      OMP_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e . -r requirements-demo.txt dbt-bigquery==1.9.2
+      - run: PYTHONPATH=src python -m unittest discover -s tests -v
+      - run: python scripts/validate_report_source.py
+      - run: python -m healthcare_capstone.demo --output data/demo --patients 1000
+      - run: python scripts/quality_gate.py --input data/demo
+      - name: Parse dbt models without cloud execution
+        run: dbt parse --project-dir warehouse --profiles-dir warehouse
+        env:
+          GCP_PROJECT_ID: synthetic-ci-placeholder
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: synthetic-build-evidence
+          path: |
+            data/demo/build_manifest.json
+            data/demo/quality_checks.json
+            data/demo/quality_gate.json
+            data/demo/alerts.json
+            data/demo/models/*/*.json
+  cloud-query-validation:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && vars.ENABLE_CLOUD_PR_CHECKS == 'true'
+    needs: local-validation
+    runs-on: ubuntu-latest
+    environment: portfolio-cloud
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install dbt-bigquery==1.9.2
+      - run: dbt compile --project-dir warehouse --profiles-dir warehouse
+      - run: python scripts/dry_run_compiled.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bigquery-pr-dry-runs
+          path: data/cloud/pr-query-checks.json

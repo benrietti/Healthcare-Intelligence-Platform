@@ -23,7 +23,7 @@ readmission_scores as (
         encounter_id,
         readmission_probability,
         model_name as readmission_model_name,
-        scored_at as readmission_scored_at
+        cast(scored_at as timestamp) as readmission_scored_at
     from {{ source('ml', 'ml_readmission_predictions') }}
 ),
 
@@ -32,7 +32,7 @@ los_scores as (
         encounter_id,
         length_of_stay_hours_predicted,
         model_name as length_of_stay_model_name,
-        scored_at as length_of_stay_scored_at
+        cast(scored_at as timestamp) as length_of_stay_scored_at
     from {{ source('ml', 'ml_length_of_stay_predictions') }}
 )
 

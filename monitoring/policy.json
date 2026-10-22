@@ -1,0 +1,9 @@
+{
+  "owner": "analytics-platform-owner",
+  "freshness_hours": 48,
+  "max_missing_timestamp_rate": 0.10,
+  "max_missing_department_rate": 0.10,
+  "max_late_arrival_rate": 0.10,
+  "psi_alert_threshold": 0.20,
+  "response": "Inspect source completeness, recent changes, and failed checks; rerun before reporting refresh."
+}

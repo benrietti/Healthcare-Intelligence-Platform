@@ -22,3 +22,8 @@ sources:
             tests: [not_null, unique]
           - name: length_of_stay_hours_predicted
             tests: [not_null]
+      - name: ml_claim_denial_predictions
+        columns:
+          - name: claim_id
+            tests: [not_null, unique]
+      - name: model_drift

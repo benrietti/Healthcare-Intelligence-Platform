@@ -1,0 +1,12 @@
+version: 2
+seeds:
+  - name: clinical_taxonomy_crosswalk
+    columns:
+      - name: source_code
+        tests: [not_null, unique]
+      - name: analytical_category
+        tests: [not_null]
+  - name: bed_milestones
+    columns:
+      - name: encounter_id
+        tests: [not_null, unique]

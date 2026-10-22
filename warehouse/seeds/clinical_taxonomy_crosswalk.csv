@@ -1,0 +1,6 @@
+source_system,source_code,analytical_category,synthetic
+synthetic_flowsheet,SYN-VITAL-HR,cardiovascular,true
+synthetic_flowsheet,SYN-VITAL-RR,respiratory,true
+synthetic_flowsheet,SYN-TEMP,infection,true
+synthetic_diagnosis,SYN-DX-INJURY,injury,true
+synthetic_diagnosis,SYN-DX-NEOPLASM,neoplasm,true

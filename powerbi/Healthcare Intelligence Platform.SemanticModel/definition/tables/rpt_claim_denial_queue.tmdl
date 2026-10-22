@@ -1,0 +1,88 @@
+table rpt_claim_denial_queue
+	lineageTag: d43d8630-472f-43bf-a93a-3699e71f57dd
+
+	measure 'Scored Claims' = COUNTROWS(rpt_claim_denial_queue)
+		formatString: 0
+		lineageTag: d29e1c56-f4e9-44bc-99b6-4dc17689349b
+
+	measure 'Average Denial Risk' = AVERAGE(rpt_claim_denial_queue[denial_probability])
+		formatString: 0.0%
+		lineageTag: b79890a3-45de-4a90-b9b0-76ef019363be
+
+	measure 'High Risk Claims' = CALCULATE(COUNTROWS(rpt_claim_denial_queue), rpt_claim_denial_queue[denial_probability] >= 0.5)
+		formatString: 0
+		lineageTag: 4634cb29-757e-4216-801d-064367156318
+
+	column claim_id
+		dataType: string
+		lineageTag: ec472d27-0076-4a2d-b9e7-4b2be439820f
+		summarizeBy: none
+		sourceColumn: claim_id
+
+	column encounter_id
+		dataType: string
+		lineageTag: f3a8589f-d33f-472c-9431-357db8fa7d79
+		summarizeBy: none
+		sourceColumn: encounter_id
+
+	column payer
+		dataType: string
+		lineageTag: d3abeb6e-ba5b-4cc1-b958-47d83d8c6c56
+		summarizeBy: none
+		sourceColumn: payer
+
+	column claim_submit_ts
+		dataType: dateTime
+		lineageTag: 30dff4b4-c5fa-449f-886e-a4248516d58c
+		summarizeBy: none
+		sourceColumn: claim_submit_ts
+
+	column billed_amount
+		dataType: double
+		lineageTag: 4645bfe8-994c-4cad-b0ba-0a0278fedf82
+		summarizeBy: sum
+		sourceColumn: billed_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column authorization_present
+		dataType: boolean
+		lineageTag: 1bf22db3-8a2f-4f8e-b8f3-115c6a927dfc
+		summarizeBy: none
+		sourceColumn: authorization_present
+
+	column documentation_complete
+		dataType: boolean
+		lineageTag: 6a415150-b8bb-4e94-933d-c5df45ab7e27
+		summarizeBy: none
+		sourceColumn: documentation_complete
+
+	column procedure_group
+		dataType: string
+		lineageTag: 3e8ee3fb-66fc-4056-ac8a-de3627681617
+		summarizeBy: none
+		sourceColumn: procedure_group
+
+	column denial_probability
+		dataType: double
+		lineageTag: 5986a0b3-9cc6-45c7-8994-86ab477922c0
+		summarizeBy: none
+		sourceColumn: denial_probability
+
+	column review_rank
+		dataType: int64
+		lineageTag: f240c333-af9b-4ae5-90b9-bca436dac059
+		summarizeBy: none
+		sourceColumn: review_rank
+
+	partition rpt_claim_denial_queue = m
+		mode: import
+		source =
+				let
+				    Source = GoogleBigQuery.Database(),
+				    Project = Source{[Name="healthcare-intelligence-512118"]}[Data],
+				    Schema = Project{[Name="healthcare_capstone_analytics",Kind="Schema"]}[Data],
+				    Data = Schema{[Name="rpt_claim_denial_queue",Kind="View"]}[Data]
+				in Data

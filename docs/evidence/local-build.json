@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "seed": 42,
+  "rows": {
+    "patients": 2000,
+    "encounters": 2656,
+    "clinical_events": 17288,
+    "claims": 2656
+  },
+  "models": {
+    "readmission_30d": {
+      "model": "readmission_30d",
+      "prediction_time": "admission_ts",
+      "features": [
+        "facility_id",
+        "service_line",
+        "primary_diagnosis_group",
+        "payer",
+        "sex",
+        "home_state",
+        "patient_age_at_admission",
+        "admission_hour",
+        "admission_dow",
+        "admission_month"
+      ],
+      "cutoff": "2025-05-30 03:26:00+00:00",
+      "n_train": 1994,
+      "n_purged": 127,
+      "test": {
+        "roc_auc": 0.5565180346492474,
+        "average_precision": 0.07134439521346855,
+        "brier_score": 0.05201243511733672,
+        "positive_rate": 0.05273069679849341,
+        "n_samples": 531
+      },
+      "baseline": {
+        "roc_auc": 0.5,
+        "average_precision": 0.05273069679849341,
+        "brier_score": 0.05052614611500968,
+        "positive_rate": 0.05273069679849341,
+        "n_samples": 531
+      },
+      "synthetic_only": true,
+      "top_20pct_precision": 0.07547169811320754,
+      "review_fraction": 0.19962335216572505
+    },
+    "length_of_stay": {
+      "model": "length_of_stay",
+      "prediction_time": "admission_ts",
+      "features": [
+        "facility_id",
+        "service_line",
+        "primary_diagnosis_group",
+        "payer",
+        "sex",
+        "home_state",
+        "patient_age_at_admission",
+        "admission_hour",
+        "admission_dow",
+        "admission_month"
+      ],
+      "cutoff": "2025-05-30 16:26:00+00:00",
+      "n_train": 2121,
+      "n_purged": 3,
+      "test": {
+        "mae": 14.017491720269787,
+        "rmse": 18.433526452881498,
+        "r2": -0.019245514086074333,
+        "n_samples": 532
+      },
+      "baseline": {
+        "mae": 13.892632217034807,
+        "rmse": 18.27223067569299,
+        "r2": -0.0014864882180964933,
+        "n_samples": 532
+      },
+      "synthetic_only": true
+    },
+    "claim_denial": {
+      "model": "claim_denial",
+      "prediction_time": "claim_submit_ts",
+      "features": [
+        "payer",
+        "billed_amount",
+        "authorization_present",
+        "documentation_complete",
+        "procedure_group"
+      ],
+      "cutoff": "2025-06-10 12:49:00+00:00",
+      "n_train": 1847,
+      "n_purged": 57,
+      "test": {
+        "roc_auc": 0.7198353025420694,
+        "average_precision": 0.3430115698953152,
+        "brier_score": 0.12513655033161183,
+        "positive_rate": 0.16176470588235295,
+        "n_samples": 476
+      },
+      "baseline": {
+        "roc_auc": 0.5,
+        "average_precision": 0.16176470588235295,
+        "brier_score": 0.13568381431077822,
+        "positive_rate": 0.16176470588235295,
+        "n_samples": 476
+      },
+      "synthetic_only": true,
+      "top_20pct_precision": 0.3368421052631579,
+      "review_fraction": 0.19957983193277312
+    }
+  },
+  "duration_seconds": 10.610951598000156,
+  "cloud_execution_verified": false,
+  "powerbi_refresh_verified": false
+}

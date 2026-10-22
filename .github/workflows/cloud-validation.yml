@@ -1,0 +1,38 @@
+name: Authorized cloud validation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  warehouse:
+    runs-on: ubuntu-latest
+    environment: portfolio-cloud
+    env:
+      GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+      DBT_RAW_DATASET: healthcare_capstone_raw
+      DBT_ANALYTICS_DATASET: healthcare_capstone_analytics
+      ML_PREDICTIONS_DATASET: healthcare_capstone_ml
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e . -r requirements-demo.txt -r requirements-gcp.txt dbt-bigquery==1.9.2
+      - run: python -m healthcare_capstone.cli generate --output data/generated --patients 2000
+      - run: python -m healthcare_capstone.cli ingest-gcp --project-id "$GCP_PROJECT_ID" --bucket "${{ vars.GCP_BUCKET }}"
+      - run: PYTHONPATH=src python scripts/cloud_build.py
+      - run: python scripts/query_budget.py
+      - run: python scripts/cloud_monitor.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cloud-validation-evidence
+          path: |
+            warehouse/target/run_results.json
+            warehouse/target/sources.json
+            data/cloud/models/*/*.json

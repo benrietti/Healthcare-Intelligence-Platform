@@ -1,0 +1,31 @@
+{
+  "model": "claim_denial",
+  "prediction_time": "claim_submit_ts",
+  "features": [
+    "payer",
+    "billed_amount",
+    "authorization_present",
+    "documentation_complete",
+    "procedure_group"
+  ],
+  "cutoff": "2025-06-10 12:49:00+00:00",
+  "n_train": 1847,
+  "n_purged": 57,
+  "test": {
+    "roc_auc": 0.7198353025420694,
+    "average_precision": 0.3430115698953152,
+    "brier_score": 0.12513655033161183,
+    "positive_rate": 0.16176470588235295,
+    "n_samples": 476
+  },
+  "baseline": {
+    "roc_auc": 0.5,
+    "average_precision": 0.16176470588235295,
+    "brier_score": 0.13568381431077822,
+    "positive_rate": 0.16176470588235295,
+    "n_samples": 476
+  },
+  "synthetic_only": true,
+  "top_20pct_precision": 0.3368421052631579,
+  "review_fraction": 0.19957983193277312
+}

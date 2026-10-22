@@ -1,0 +1,82 @@
+[
+  {
+    "feature": "facility_id",
+    "psi": 0.0012099297818724405,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "service_line",
+    "psi": 0.0012252839138505894,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "primary_diagnosis_group",
+    "psi": 0.0023275089349888943,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "payer",
+    "psi": 0.002912246303664689,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "sex",
+    "psi": 0.0033818635743480003,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "home_state",
+    "psi": 0.0074249156295757,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "patient_age_at_admission",
+    "psi": 0.01953847887286147,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "admission_hour",
+    "psi": 0.01122874958127397,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "admission_dow",
+    "psi": 0.002741701734553004,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "admission_month",
+    "psi": 3.2163508123211786,
+    "threshold": 0.2,
+    "status": "alert",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  }
+]

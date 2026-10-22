@@ -23,6 +23,10 @@ sources:
           - name: claim_id
             tests: [not_null, unique]
       - name: _ingestion_runs
+        loaded_at_field: started_at
+        freshness:
+          warn_after: {count: 24, period: hour}
+          error_after: {count: 48, period: hour}
         identifier: _ingestion_runs
         description: "Audit log of ingestion runs written by the atomic BigQuery loader."
         columns:

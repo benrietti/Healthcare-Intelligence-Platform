@@ -9,6 +9,8 @@ select
   cast(event_type as string) as event_type,
   nullif(cast(department as string), '') as department,
   cast(event_status as string) as event_status,
+  cast(source_system as string) as source_system,
+  cast(source_code as string) as source_code,
   safe_cast(synthetic as bool) as synthetic,
   event_ts is null or event_ts = '' as has_missing_event_ts,
   department is null or department = '' as has_missing_department,

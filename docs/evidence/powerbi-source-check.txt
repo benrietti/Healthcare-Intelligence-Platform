@@ -1,0 +1,1 @@
+Power BI source bindings passed; Desktop rendering and refresh still required.

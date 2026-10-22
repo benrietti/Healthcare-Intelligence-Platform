@@ -1,0 +1,27 @@
+[
+  {
+    "feature": "payer",
+    "importance": -0.0009276437847867358,
+    "std": 0.0020604510778167006
+  },
+  {
+    "feature": "billed_amount",
+    "importance": -0.005087393809198382,
+    "std": 0.006499516693946979
+  },
+  {
+    "feature": "authorization_present",
+    "importance": 0.09486052794323463,
+    "std": 0.014664202385826794
+  },
+  {
+    "feature": "documentation_complete",
+    "importance": 0.0921199101650229,
+    "std": 0.006941763448131706
+  },
+  {
+    "feature": "procedure_group",
+    "importance": 0.04129479543013372,
+    "std": 0.014083541351486756
+  }
+]

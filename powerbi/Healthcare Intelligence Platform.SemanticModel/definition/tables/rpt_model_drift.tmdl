@@ -1,0 +1,64 @@
+table rpt_model_drift
+	lineageTag: 444d85cd-1b2e-4b3a-b3e7-6ae64690ea38
+
+	measure 'Drift Alerts' = CALCULATE(COUNTROWS(rpt_model_drift), rpt_model_drift[status] = "alert")
+		formatString: 0
+		lineageTag: a122fdf2-ff1c-4339-a8c6-072e3a4052b9
+
+	column model_name
+		dataType: string
+		lineageTag: a538d689-1c78-40cb-8c0c-db67bf5a820a
+		summarizeBy: none
+		sourceColumn: model_name
+
+	column feature
+		dataType: string
+		lineageTag: c33f8884-85fa-4292-ab4a-bcfc0bc5c256
+		summarizeBy: none
+		sourceColumn: feature
+
+	column psi
+		dataType: double
+		lineageTag: 2046af8e-6000-4a59-b00a-79059c8fbea0
+		summarizeBy: none
+		sourceColumn: psi
+
+	column threshold
+		dataType: double
+		lineageTag: d2349ee2-0770-48c6-b237-df2b1bddbb70
+		summarizeBy: none
+		sourceColumn: threshold
+
+	column status
+		dataType: string
+		lineageTag: 670216b5-e1ac-4801-a7a2-a44d4c72276d
+		summarizeBy: none
+		sourceColumn: status
+
+	column reference_missing_rate
+		dataType: double
+		lineageTag: 08eb71a9-e853-4059-8879-94f3ff6f9e2d
+		summarizeBy: none
+		sourceColumn: reference_missing_rate
+
+	column current_missing_rate
+		dataType: double
+		lineageTag: 40ecf543-d601-4341-a55c-d9f737cb5693
+		summarizeBy: none
+		sourceColumn: current_missing_rate
+
+	column evaluated_at
+		dataType: dateTime
+		lineageTag: 1d1113f7-79bb-4227-af0f-2f5f07e19f94
+		summarizeBy: none
+		sourceColumn: evaluated_at
+
+	partition rpt_model_drift = m
+		mode: import
+		source =
+				let
+				    Source = GoogleBigQuery.Database(),
+				    Project = Source{[Name="healthcare-intelligence-512118"]}[Data],
+				    Schema = Project{[Name="healthcare_capstone_analytics",Kind="Schema"]}[Data],
+				    Data = Schema{[Name="rpt_model_drift",Kind="View"]}[Data]
+				in Data

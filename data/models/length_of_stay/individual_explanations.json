@@ -1,0 +1,3502 @@
+[
+  {
+    "row_id": "1851",
+    "feature": "facility_id",
+    "prediction": 32.563301710021044,
+    "reference_delta": -0.4834261570196574,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1851",
+    "feature": "service_line",
+    "prediction": 32.563301710021044,
+    "reference_delta": -9.055789028067252,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1851",
+    "feature": "primary_diagnosis_group",
+    "prediction": 32.563301710021044,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1851",
+    "feature": "payer",
+    "prediction": 32.563301710021044,
+    "reference_delta": 0.06857502341225086,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1851",
+    "feature": "sex",
+    "prediction": 32.563301710021044,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1851",
+    "feature": "home_state",
+    "prediction": 32.563301710021044,
+    "reference_delta": 0.4700849306000663,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1851",
+    "feature": "patient_age_at_admission",
+    "prediction": 32.563301710021044,
+    "reference_delta": -0.9143897838985069,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1851",
+    "feature": "admission_hour",
+    "prediction": 32.563301710021044,
+    "reference_delta": -1.0315211139521523,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1851",
+    "feature": "admission_dow",
+    "prediction": 32.563301710021044,
+    "reference_delta": -0.8063045513792062,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1851",
+    "feature": "admission_month",
+    "prediction": 32.563301710021044,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2333",
+    "feature": "facility_id",
+    "prediction": 35.54049495440929,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2333",
+    "feature": "service_line",
+    "prediction": 35.54049495440929,
+    "reference_delta": -1.33678279218379,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2333",
+    "feature": "primary_diagnosis_group",
+    "prediction": 35.54049495440929,
+    "reference_delta": -0.7351889409094952,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2333",
+    "feature": "payer",
+    "prediction": 35.54049495440929,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2333",
+    "feature": "sex",
+    "prediction": 35.54049495440929,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2333",
+    "feature": "home_state",
+    "prediction": 35.54049495440929,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2333",
+    "feature": "patient_age_at_admission",
+    "prediction": 35.54049495440929,
+    "reference_delta": -1.4924868252442067,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2333",
+    "feature": "admission_hour",
+    "prediction": 35.54049495440929,
+    "reference_delta": 0.9120708739097267,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2333",
+    "feature": "admission_dow",
+    "prediction": 35.54049495440929,
+    "reference_delta": 0.4233885826231898,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2333",
+    "feature": "admission_month",
+    "prediction": 35.54049495440929,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "facility_id",
+    "prediction": 30.361034700859395,
+    "reference_delta": -2.388273589596377,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "service_line",
+    "prediction": 30.361034700859395,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "857",
+    "feature": "primary_diagnosis_group",
+    "prediction": 30.361034700859395,
+    "reference_delta": 0.09013393955218874,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "payer",
+    "prediction": 30.361034700859395,
+    "reference_delta": 1.0147925106752353,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "sex",
+    "prediction": 30.361034700859395,
+    "reference_delta": -3.899422693311724,
+    "stable_direction": false
+  },
+  {
+    "row_id": "857",
+    "feature": "home_state",
+    "prediction": 30.361034700859395,
+    "reference_delta": 0.6069566102759367,
+    "stable_direction": false
+  },
+  {
+    "row_id": "857",
+    "feature": "patient_age_at_admission",
+    "prediction": 30.361034700859395,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "admission_hour",
+    "prediction": 30.361034700859395,
+    "reference_delta": -5.376002420676773,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "admission_dow",
+    "prediction": 30.361034700859395,
+    "reference_delta": -0.5631247097372167,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "admission_month",
+    "prediction": 30.361034700859395,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "850",
+    "feature": "facility_id",
+    "prediction": 34.555467466504794,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "850",
+    "feature": "service_line",
+    "prediction": 34.555467466504794,
+    "reference_delta": 1.2553268134313456,
+    "stable_direction": false
+  },
+  {
+    "row_id": "850",
+    "feature": "primary_diagnosis_group",
+    "prediction": 34.555467466504794,
+    "reference_delta": 0.3674043497584236,
+    "stable_direction": true
+  },
+  {
+    "row_id": "850",
+    "feature": "payer",
+    "prediction": 34.555467466504794,
+    "reference_delta": -0.9358275299166579,
+    "stable_direction": false
+  },
+  {
+    "row_id": "850",
+    "feature": "sex",
+    "prediction": 34.555467466504794,
+    "reference_delta": 0.43064147277497256,
+    "stable_direction": true
+  },
+  {
+    "row_id": "850",
+    "feature": "home_state",
+    "prediction": 34.555467466504794,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "850",
+    "feature": "patient_age_at_admission",
+    "prediction": 34.555467466504794,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "850",
+    "feature": "admission_hour",
+    "prediction": 34.555467466504794,
+    "reference_delta": -0.6459372615652228,
+    "stable_direction": true
+  },
+  {
+    "row_id": "850",
+    "feature": "admission_dow",
+    "prediction": 34.555467466504794,
+    "reference_delta": -0.022523646266904507,
+    "stable_direction": true
+  },
+  {
+    "row_id": "850",
+    "feature": "admission_month",
+    "prediction": 34.555467466504794,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "633",
+    "feature": "facility_id",
+    "prediction": 32.233392253554555,
+    "reference_delta": 3.15631804308687,
+    "stable_direction": false
+  },
+  {
+    "row_id": "633",
+    "feature": "service_line",
+    "prediction": 32.233392253554555,
+    "reference_delta": -0.7890033849233902,
+    "stable_direction": false
+  },
+  {
+    "row_id": "633",
+    "feature": "primary_diagnosis_group",
+    "prediction": 32.233392253554555,
+    "reference_delta": -0.7649372834984334,
+    "stable_direction": true
+  },
+  {
+    "row_id": "633",
+    "feature": "payer",
+    "prediction": 32.233392253554555,
+    "reference_delta": 0.9351434218406389,
+    "stable_direction": false
+  },
+  {
+    "row_id": "633",
+    "feature": "sex",
+    "prediction": 32.233392253554555,
+    "reference_delta": 0.1587534926342542,
+    "stable_direction": false
+  },
+  {
+    "row_id": "633",
+    "feature": "home_state",
+    "prediction": 32.233392253554555,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "633",
+    "feature": "patient_age_at_admission",
+    "prediction": 32.233392253554555,
+    "reference_delta": -2.8730946467108964,
+    "stable_direction": true
+  },
+  {
+    "row_id": "633",
+    "feature": "admission_hour",
+    "prediction": 32.233392253554555,
+    "reference_delta": 0.0962578832678318,
+    "stable_direction": true
+  },
+  {
+    "row_id": "633",
+    "feature": "admission_dow",
+    "prediction": 32.233392253554555,
+    "reference_delta": -1.3774857065103987,
+    "stable_direction": true
+  },
+  {
+    "row_id": "633",
+    "feature": "admission_month",
+    "prediction": 32.233392253554555,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "facility_id",
+    "prediction": 35.26052950986421,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1313",
+    "feature": "service_line",
+    "prediction": 35.26052950986421,
+    "reference_delta": 0.07744217500586359,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "primary_diagnosis_group",
+    "prediction": 35.26052950986421,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "payer",
+    "prediction": 35.26052950986421,
+    "reference_delta": 0.06857502341225086,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "sex",
+    "prediction": 35.26052950986421,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1313",
+    "feature": "home_state",
+    "prediction": 35.26052950986421,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1313",
+    "feature": "patient_age_at_admission",
+    "prediction": 35.26052950986421,
+    "reference_delta": 0.09021338483660202,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "admission_hour",
+    "prediction": 35.26052950986421,
+    "reference_delta": -0.05578259328685675,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "admission_dow",
+    "prediction": 35.26052950986421,
+    "reference_delta": 0.8912737415865308,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "admission_month",
+    "prediction": 35.26052950986421,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "179",
+    "feature": "facility_id",
+    "prediction": 34.66989983886309,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "179",
+    "feature": "service_line",
+    "prediction": 34.66989983886309,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "179",
+    "feature": "primary_diagnosis_group",
+    "prediction": 34.66989983886309,
+    "reference_delta": 2.4941732845476565,
+    "stable_direction": true
+  },
+  {
+    "row_id": "179",
+    "feature": "payer",
+    "prediction": 34.66989983886309,
+    "reference_delta": -3.6563286448557832,
+    "stable_direction": false
+  },
+  {
+    "row_id": "179",
+    "feature": "sex",
+    "prediction": 34.66989983886309,
+    "reference_delta": -3.692256311913283,
+    "stable_direction": false
+  },
+  {
+    "row_id": "179",
+    "feature": "home_state",
+    "prediction": 34.66989983886309,
+    "reference_delta": -1.3302822462437334,
+    "stable_direction": false
+  },
+  {
+    "row_id": "179",
+    "feature": "patient_age_at_admission",
+    "prediction": 34.66989983886309,
+    "reference_delta": 0.14732496287537344,
+    "stable_direction": true
+  },
+  {
+    "row_id": "179",
+    "feature": "admission_hour",
+    "prediction": 34.66989983886309,
+    "reference_delta": 0.30272781063951726,
+    "stable_direction": true
+  },
+  {
+    "row_id": "179",
+    "feature": "admission_dow",
+    "prediction": 34.66989983886309,
+    "reference_delta": 2.589978010430279,
+    "stable_direction": true
+  },
+  {
+    "row_id": "179",
+    "feature": "admission_month",
+    "prediction": 34.66989983886309,
+    "reference_delta": -0.6848638301123913,
+    "stable_direction": true
+  },
+  {
+    "row_id": "951",
+    "feature": "facility_id",
+    "prediction": 37.269957402196994,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "951",
+    "feature": "service_line",
+    "prediction": 37.269957402196994,
+    "reference_delta": -1.4667877439049377,
+    "stable_direction": false
+  },
+  {
+    "row_id": "951",
+    "feature": "primary_diagnosis_group",
+    "prediction": 37.269957402196994,
+    "reference_delta": 2.195389740518351,
+    "stable_direction": true
+  },
+  {
+    "row_id": "951",
+    "feature": "payer",
+    "prediction": 37.269957402196994,
+    "reference_delta": -0.607700249154135,
+    "stable_direction": false
+  },
+  {
+    "row_id": "951",
+    "feature": "sex",
+    "prediction": 37.269957402196994,
+    "reference_delta": -0.8961387660708127,
+    "stable_direction": true
+  },
+  {
+    "row_id": "951",
+    "feature": "home_state",
+    "prediction": 37.269957402196994,
+    "reference_delta": 0.6122096017595879,
+    "stable_direction": true
+  },
+  {
+    "row_id": "951",
+    "feature": "patient_age_at_admission",
+    "prediction": 37.269957402196994,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "951",
+    "feature": "admission_hour",
+    "prediction": 37.269957402196994,
+    "reference_delta": 0.06429072943670633,
+    "stable_direction": true
+  },
+  {
+    "row_id": "951",
+    "feature": "admission_dow",
+    "prediction": 37.269957402196994,
+    "reference_delta": 1.272975943692579,
+    "stable_direction": true
+  },
+  {
+    "row_id": "951",
+    "feature": "admission_month",
+    "prediction": 37.269957402196994,
+    "reference_delta": -0.6848638301123913,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2120",
+    "feature": "facility_id",
+    "prediction": 38.93487137567857,
+    "reference_delta": -3.348159747850687,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2120",
+    "feature": "service_line",
+    "prediction": 38.93487137567857,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2120",
+    "feature": "primary_diagnosis_group",
+    "prediction": 38.93487137567857,
+    "reference_delta": -0.08881646252797282,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2120",
+    "feature": "payer",
+    "prediction": 38.93487137567857,
+    "reference_delta": -1.4131212794435086,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2120",
+    "feature": "sex",
+    "prediction": 38.93487137567857,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2120",
+    "feature": "home_state",
+    "prediction": 38.93487137567857,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2120",
+    "feature": "patient_age_at_admission",
+    "prediction": 38.93487137567857,
+    "reference_delta": 1.8751361157965647,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2120",
+    "feature": "admission_hour",
+    "prediction": 38.93487137567857,
+    "reference_delta": 1.1806495907281018,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2120",
+    "feature": "admission_dow",
+    "prediction": 38.93487137567857,
+    "reference_delta": 1.509946538105197,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2120",
+    "feature": "admission_month",
+    "prediction": 38.93487137567857,
+    "reference_delta": -0.6815306724397132,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1463",
+    "feature": "facility_id",
+    "prediction": 36.20881949850847,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1463",
+    "feature": "service_line",
+    "prediction": 36.20881949850847,
+    "reference_delta": 2.1504148066534583,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1463",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.20881949850847,
+    "reference_delta": 0.09804843330491053,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1463",
+    "feature": "payer",
+    "prediction": 36.20881949850847,
+    "reference_delta": -0.25555377545375535,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1463",
+    "feature": "sex",
+    "prediction": 36.20881949850847,
+    "reference_delta": 0.640853035989501,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1463",
+    "feature": "home_state",
+    "prediction": 36.20881949850847,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1463",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.20881949850847,
+    "reference_delta": -2.778118744723699,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1463",
+    "feature": "admission_hour",
+    "prediction": 36.20881949850847,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1463",
+    "feature": "admission_dow",
+    "prediction": 36.20881949850847,
+    "reference_delta": 1.4984053354497249,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1463",
+    "feature": "admission_month",
+    "prediction": 36.20881949850847,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "facility_id",
+    "prediction": 37.49398735871048,
+    "reference_delta": -2.684845881794651,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "service_line",
+    "prediction": 37.49398735871048,
+    "reference_delta": -1.606642652271411,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1945",
+    "feature": "primary_diagnosis_group",
+    "prediction": 37.49398735871048,
+    "reference_delta": 1.7786146333369715,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "payer",
+    "prediction": 37.49398735871048,
+    "reference_delta": -1.0044025533289087,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1945",
+    "feature": "sex",
+    "prediction": 37.49398735871048,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1945",
+    "feature": "home_state",
+    "prediction": 37.49398735871048,
+    "reference_delta": -0.0335156151512237,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1945",
+    "feature": "patient_age_at_admission",
+    "prediction": 37.49398735871048,
+    "reference_delta": -1.7122391790626992,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "admission_hour",
+    "prediction": 37.49398735871048,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "admission_dow",
+    "prediction": 37.49398735871048,
+    "reference_delta": 1.7431855116900223,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "admission_month",
+    "prediction": 37.49398735871048,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1412",
+    "feature": "facility_id",
+    "prediction": 38.189132009416014,
+    "reference_delta": -0.3196850247374101,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1412",
+    "feature": "service_line",
+    "prediction": 38.189132009416014,
+    "reference_delta": 0.2362867048195696,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1412",
+    "feature": "primary_diagnosis_group",
+    "prediction": 38.189132009416014,
+    "reference_delta": -2.1291067221522653,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1412",
+    "feature": "payer",
+    "prediction": 38.189132009416014,
+    "reference_delta": -0.4320389114698884,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1412",
+    "feature": "sex",
+    "prediction": 38.189132009416014,
+    "reference_delta": 0.640853035989501,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1412",
+    "feature": "home_state",
+    "prediction": 38.189132009416014,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1412",
+    "feature": "patient_age_at_admission",
+    "prediction": 38.189132009416014,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1412",
+    "feature": "admission_hour",
+    "prediction": 38.189132009416014,
+    "reference_delta": 4.397035269637271,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1412",
+    "feature": "admission_dow",
+    "prediction": 38.189132009416014,
+    "reference_delta": 3.999797054525068,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1412",
+    "feature": "admission_month",
+    "prediction": 38.189132009416014,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "facility_id",
+    "prediction": 42.234468967160055,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1469",
+    "feature": "service_line",
+    "prediction": 42.234468967160055,
+    "reference_delta": -6.082175147134869,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "primary_diagnosis_group",
+    "prediction": 42.234468967160055,
+    "reference_delta": 0.09013393955218163,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "payer",
+    "prediction": 42.234468967160055,
+    "reference_delta": 0.570133289800161,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "sex",
+    "prediction": 42.234468967160055,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1469",
+    "feature": "home_state",
+    "prediction": 42.234468967160055,
+    "reference_delta": 1.1421180597198273,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "patient_age_at_admission",
+    "prediction": 42.234468967160055,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "admission_hour",
+    "prediction": 42.234468967160055,
+    "reference_delta": 3.9435464807914613,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "admission_dow",
+    "prediction": 42.234468967160055,
+    "reference_delta": 1.9280733857544945,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "admission_month",
+    "prediction": 42.234468967160055,
+    "reference_delta": 0.8793446863229804,
+    "stable_direction": true
+  },
+  {
+    "row_id": "72",
+    "feature": "facility_id",
+    "prediction": 36.30936769596556,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "72",
+    "feature": "service_line",
+    "prediction": 36.30936769596556,
+    "reference_delta": -4.367992517466952,
+    "stable_direction": false
+  },
+  {
+    "row_id": "72",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.30936769596556,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "72",
+    "feature": "payer",
+    "prediction": 36.30936769596556,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "72",
+    "feature": "sex",
+    "prediction": 36.30936769596556,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "72",
+    "feature": "home_state",
+    "prediction": 36.30936769596556,
+    "reference_delta": -2.6003306462392572,
+    "stable_direction": true
+  },
+  {
+    "row_id": "72",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.30936769596556,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "72",
+    "feature": "admission_hour",
+    "prediction": 36.30936769596556,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "72",
+    "feature": "admission_dow",
+    "prediction": 36.30936769596556,
+    "reference_delta": 0.5423141175272974,
+    "stable_direction": true
+  },
+  {
+    "row_id": "72",
+    "feature": "admission_month",
+    "prediction": 36.30936769596556,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "583",
+    "feature": "facility_id",
+    "prediction": 34.02932939505059,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "583",
+    "feature": "service_line",
+    "prediction": 34.02932939505059,
+    "reference_delta": 0.892754636323204,
+    "stable_direction": false
+  },
+  {
+    "row_id": "583",
+    "feature": "primary_diagnosis_group",
+    "prediction": 34.02932939505059,
+    "reference_delta": 0.3881842203880197,
+    "stable_direction": true
+  },
+  {
+    "row_id": "583",
+    "feature": "payer",
+    "prediction": 34.02932939505059,
+    "reference_delta": -1.7818222907587966,
+    "stable_direction": true
+  },
+  {
+    "row_id": "583",
+    "feature": "sex",
+    "prediction": 34.02932939505059,
+    "reference_delta": -0.24639923786801177,
+    "stable_direction": false
+  },
+  {
+    "row_id": "583",
+    "feature": "home_state",
+    "prediction": 34.02932939505059,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "583",
+    "feature": "patient_age_at_admission",
+    "prediction": 34.02932939505059,
+    "reference_delta": 0.8858382091547412,
+    "stable_direction": true
+  },
+  {
+    "row_id": "583",
+    "feature": "admission_hour",
+    "prediction": 34.02932939505059,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "583",
+    "feature": "admission_dow",
+    "prediction": 34.02932939505059,
+    "reference_delta": -1.0525294211899947,
+    "stable_direction": true
+  },
+  {
+    "row_id": "583",
+    "feature": "admission_month",
+    "prediction": 34.02932939505059,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "facility_id",
+    "prediction": 35.04057760966669,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1374",
+    "feature": "service_line",
+    "prediction": 35.04057760966669,
+    "reference_delta": -0.7765288136193575,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "primary_diagnosis_group",
+    "prediction": 35.04057760966669,
+    "reference_delta": 0.06862080572911822,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "payer",
+    "prediction": 35.04057760966669,
+    "reference_delta": -1.5262685153050413,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1374",
+    "feature": "sex",
+    "prediction": 35.04057760966669,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1374",
+    "feature": "home_state",
+    "prediction": 35.04057760966669,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1374",
+    "feature": "patient_age_at_admission",
+    "prediction": 35.04057760966669,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "admission_hour",
+    "prediction": 35.04057760966669,
+    "reference_delta": 0.6792268246752471,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "admission_dow",
+    "prediction": 35.04057760966669,
+    "reference_delta": -0.7879436832196447,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "admission_month",
+    "prediction": 35.04057760966669,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2210",
+    "feature": "facility_id",
+    "prediction": 35.728342413261785,
+    "reference_delta": -0.9513270013705792,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2210",
+    "feature": "service_line",
+    "prediction": 35.728342413261785,
+    "reference_delta": -4.0018517456529,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2210",
+    "feature": "primary_diagnosis_group",
+    "prediction": 35.728342413261785,
+    "reference_delta": 0.7712758581049286,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2210",
+    "feature": "payer",
+    "prediction": 35.728342413261785,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2210",
+    "feature": "sex",
+    "prediction": 35.728342413261785,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2210",
+    "feature": "home_state",
+    "prediction": 35.728342413261785,
+    "reference_delta": 1.787370881256379,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2210",
+    "feature": "patient_age_at_admission",
+    "prediction": 35.728342413261785,
+    "reference_delta": -2.6026651458470056,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2210",
+    "feature": "admission_hour",
+    "prediction": 35.728342413261785,
+    "reference_delta": 1.0375303822038333,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2210",
+    "feature": "admission_dow",
+    "prediction": 35.728342413261785,
+    "reference_delta": -0.41012179601192855,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2210",
+    "feature": "admission_month",
+    "prediction": 35.728342413261785,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "160",
+    "feature": "facility_id",
+    "prediction": 27.48239295331382,
+    "reference_delta": 0.07495734860468772,
+    "stable_direction": false
+  },
+  {
+    "row_id": "160",
+    "feature": "service_line",
+    "prediction": 27.48239295331382,
+    "reference_delta": 2.840167899256624,
+    "stable_direction": false
+  },
+  {
+    "row_id": "160",
+    "feature": "primary_diagnosis_group",
+    "prediction": 27.48239295331382,
+    "reference_delta": -1.7095356999517293,
+    "stable_direction": true
+  },
+  {
+    "row_id": "160",
+    "feature": "payer",
+    "prediction": 27.48239295331382,
+    "reference_delta": -0.1869787520414974,
+    "stable_direction": false
+  },
+  {
+    "row_id": "160",
+    "feature": "sex",
+    "prediction": 27.48239295331382,
+    "reference_delta": 0.06872797530770569,
+    "stable_direction": false
+  },
+  {
+    "row_id": "160",
+    "feature": "home_state",
+    "prediction": 27.48239295331382,
+    "reference_delta": -0.6486228552561606,
+    "stable_direction": true
+  },
+  {
+    "row_id": "160",
+    "feature": "patient_age_at_admission",
+    "prediction": 27.48239295331382,
+    "reference_delta": -4.571445005984671,
+    "stable_direction": true
+  },
+  {
+    "row_id": "160",
+    "feature": "admission_hour",
+    "prediction": 27.48239295331382,
+    "reference_delta": -3.546950853784793,
+    "stable_direction": true
+  },
+  {
+    "row_id": "160",
+    "feature": "admission_dow",
+    "prediction": 27.48239295331382,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "160",
+    "feature": "admission_month",
+    "prediction": 27.48239295331382,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2338",
+    "feature": "facility_id",
+    "prediction": 41.79545878338391,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2338",
+    "feature": "service_line",
+    "prediction": 41.79545878338391,
+    "reference_delta": 1.7590390461325782,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2338",
+    "feature": "primary_diagnosis_group",
+    "prediction": 41.79545878338391,
+    "reference_delta": 2.298073378806585,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2338",
+    "feature": "payer",
+    "prediction": 41.79545878338391,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2338",
+    "feature": "sex",
+    "prediction": 41.79545878338391,
+    "reference_delta": 0.43064147277497256,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2338",
+    "feature": "home_state",
+    "prediction": 41.79545878338391,
+    "reference_delta": 1.1865425102559328,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2338",
+    "feature": "patient_age_at_admission",
+    "prediction": 41.79545878338391,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2338",
+    "feature": "admission_hour",
+    "prediction": 41.79545878338391,
+    "reference_delta": 0.6469441124937916,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2338",
+    "feature": "admission_dow",
+    "prediction": 41.79545878338391,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2338",
+    "feature": "admission_month",
+    "prediction": 41.79545878338391,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "facility_id",
+    "prediction": 34.02038285214009,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1120",
+    "feature": "service_line",
+    "prediction": 34.02038285214009,
+    "reference_delta": -3.023638866602788,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1120",
+    "feature": "primary_diagnosis_group",
+    "prediction": 34.02038285214009,
+    "reference_delta": -1.5417423971527526,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "payer",
+    "prediction": 34.02038285214009,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1120",
+    "feature": "sex",
+    "prediction": 34.02038285214009,
+    "reference_delta": 0.43064147277497256,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "home_state",
+    "prediction": 34.02038285214009,
+    "reference_delta": -0.6674385805290015,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "patient_age_at_admission",
+    "prediction": 34.02038285214009,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "admission_hour",
+    "prediction": 34.02038285214009,
+    "reference_delta": 0.1325369654401456,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "admission_dow",
+    "prediction": 34.02038285214009,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "admission_month",
+    "prediction": 34.02038285214009,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1071",
+    "feature": "facility_id",
+    "prediction": 33.39326228893173,
+    "reference_delta": -0.9535940976337187,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1071",
+    "feature": "service_line",
+    "prediction": 33.39326228893173,
+    "reference_delta": 1.0913226777231415,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1071",
+    "feature": "primary_diagnosis_group",
+    "prediction": 33.39326228893173,
+    "reference_delta": -1.1046532856737272,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1071",
+    "feature": "payer",
+    "prediction": 33.39326228893173,
+    "reference_delta": -3.228577298948629,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1071",
+    "feature": "sex",
+    "prediction": 33.39326228893173,
+    "reference_delta": 0.43064147277497256,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1071",
+    "feature": "home_state",
+    "prediction": 33.39326228893173,
+    "reference_delta": -0.5383970184766227,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1071",
+    "feature": "patient_age_at_admission",
+    "prediction": 33.39326228893173,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1071",
+    "feature": "admission_hour",
+    "prediction": 33.39326228893173,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1071",
+    "feature": "admission_dow",
+    "prediction": 33.39326228893173,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1071",
+    "feature": "admission_month",
+    "prediction": 33.39326228893173,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "facility_id",
+    "prediction": 42.75784016402725,
+    "reference_delta": 1.1233978750512748,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1934",
+    "feature": "service_line",
+    "prediction": 42.75784016402725,
+    "reference_delta": 8.377161147024509,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "primary_diagnosis_group",
+    "prediction": 42.75784016402725,
+    "reference_delta": 2.963448100911336,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "payer",
+    "prediction": 42.75784016402725,
+    "reference_delta": 0.06857502341225086,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "sex",
+    "prediction": 42.75784016402725,
+    "reference_delta": -0.5059465709367288,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1934",
+    "feature": "home_state",
+    "prediction": 42.75784016402725,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1934",
+    "feature": "patient_age_at_admission",
+    "prediction": 42.75784016402725,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "admission_hour",
+    "prediction": 42.75784016402725,
+    "reference_delta": 0.6044257598177296,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "admission_dow",
+    "prediction": 42.75784016402725,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "admission_month",
+    "prediction": 42.75784016402725,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1124",
+    "feature": "facility_id",
+    "prediction": 34.98796693013701,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1124",
+    "feature": "service_line",
+    "prediction": 34.98796693013701,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1124",
+    "feature": "primary_diagnosis_group",
+    "prediction": 34.98796693013701,
+    "reference_delta": -0.16075082270086227,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1124",
+    "feature": "payer",
+    "prediction": 34.98796693013701,
+    "reference_delta": -1.6302682083605688,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1124",
+    "feature": "sex",
+    "prediction": 34.98796693013701,
+    "reference_delta": -0.06311495884278173,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1124",
+    "feature": "home_state",
+    "prediction": 34.98796693013701,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1124",
+    "feature": "patient_age_at_admission",
+    "prediction": 34.98796693013701,
+    "reference_delta": 0.6543679587490203,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1124",
+    "feature": "admission_hour",
+    "prediction": 34.98796693013701,
+    "reference_delta": -0.6358370963077746,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1124",
+    "feature": "admission_dow",
+    "prediction": 34.98796693013701,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1124",
+    "feature": "admission_month",
+    "prediction": 34.98796693013701,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "facility_id",
+    "prediction": 35.27644098432866,
+    "reference_delta": -1.0108602913774192,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1244",
+    "feature": "service_line",
+    "prediction": 35.27644098432866,
+    "reference_delta": 0.5464518377400793,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "primary_diagnosis_group",
+    "prediction": 35.27644098432866,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "payer",
+    "prediction": 35.27644098432866,
+    "reference_delta": -3.4656983650762783,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "sex",
+    "prediction": 35.27644098432866,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1244",
+    "feature": "home_state",
+    "prediction": 35.27644098432866,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1244",
+    "feature": "patient_age_at_admission",
+    "prediction": 35.27644098432866,
+    "reference_delta": 0.08412953178822136,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "admission_hour",
+    "prediction": 35.27644098432866,
+    "reference_delta": 0.1325369654401456,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "admission_dow",
+    "prediction": 35.27644098432866,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "admission_month",
+    "prediction": 35.27644098432866,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1028",
+    "feature": "facility_id",
+    "prediction": 34.786238686656844,
+    "reference_delta": -0.43418096295820163,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1028",
+    "feature": "service_line",
+    "prediction": 34.786238686656844,
+    "reference_delta": -1.7284452957392773,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1028",
+    "feature": "primary_diagnosis_group",
+    "prediction": 34.786238686656844,
+    "reference_delta": 1.6153188724200902,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1028",
+    "feature": "payer",
+    "prediction": 34.786238686656844,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1028",
+    "feature": "sex",
+    "prediction": 34.786238686656844,
+    "reference_delta": -0.8451430216105251,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1028",
+    "feature": "home_state",
+    "prediction": 34.786238686656844,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1028",
+    "feature": "patient_age_at_admission",
+    "prediction": 34.786238686656844,
+    "reference_delta": -0.7549210703371898,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1028",
+    "feature": "admission_hour",
+    "prediction": 34.786238686656844,
+    "reference_delta": -1.0109668327287622,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1028",
+    "feature": "admission_dow",
+    "prediction": 34.786238686656844,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1028",
+    "feature": "admission_month",
+    "prediction": 34.786238686656844,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1725",
+    "feature": "facility_id",
+    "prediction": 33.95833596247481,
+    "reference_delta": -0.3196850247374101,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1725",
+    "feature": "service_line",
+    "prediction": 33.95833596247481,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1725",
+    "feature": "primary_diagnosis_group",
+    "prediction": 33.95833596247481,
+    "reference_delta": -0.12944312404777492,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1725",
+    "feature": "payer",
+    "prediction": 33.95833596247481,
+    "reference_delta": -1.6566483502440619,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1725",
+    "feature": "sex",
+    "prediction": 33.95833596247481,
+    "reference_delta": -1.6012141542757306,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1725",
+    "feature": "home_state",
+    "prediction": 33.95833596247481,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1725",
+    "feature": "patient_age_at_admission",
+    "prediction": 33.95833596247481,
+    "reference_delta": -0.536437653511598,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1725",
+    "feature": "admission_hour",
+    "prediction": 33.95833596247481,
+    "reference_delta": -0.02116628591101488,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1725",
+    "feature": "admission_dow",
+    "prediction": 33.95833596247481,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1725",
+    "feature": "admission_month",
+    "prediction": 33.95833596247481,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "155",
+    "feature": "facility_id",
+    "prediction": 36.431051123586144,
+    "reference_delta": 2.54563988744939,
+    "stable_direction": false
+  },
+  {
+    "row_id": "155",
+    "feature": "service_line",
+    "prediction": 36.431051123586144,
+    "reference_delta": -0.750666925196235,
+    "stable_direction": true
+  },
+  {
+    "row_id": "155",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.431051123586144,
+    "reference_delta": -1.6925237487374716,
+    "stable_direction": true
+  },
+  {
+    "row_id": "155",
+    "feature": "payer",
+    "prediction": 36.431051123586144,
+    "reference_delta": 1.0894203963842273,
+    "stable_direction": true
+  },
+  {
+    "row_id": "155",
+    "feature": "sex",
+    "prediction": 36.431051123586144,
+    "reference_delta": -0.5059465709367288,
+    "stable_direction": false
+  },
+  {
+    "row_id": "155",
+    "feature": "home_state",
+    "prediction": 36.431051123586144,
+    "reference_delta": -0.31618104168527594,
+    "stable_direction": true
+  },
+  {
+    "row_id": "155",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.431051123586144,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "155",
+    "feature": "admission_hour",
+    "prediction": 36.431051123586144,
+    "reference_delta": 2.9493399541336274,
+    "stable_direction": true
+  },
+  {
+    "row_id": "155",
+    "feature": "admission_dow",
+    "prediction": 36.431051123586144,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "155",
+    "feature": "admission_month",
+    "prediction": 36.431051123586144,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1976",
+    "feature": "facility_id",
+    "prediction": 35.07980144282514,
+    "reference_delta": 2.727676842526506,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1976",
+    "feature": "service_line",
+    "prediction": 35.07980144282514,
+    "reference_delta": -1.1478945787033084,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1976",
+    "feature": "primary_diagnosis_group",
+    "prediction": 35.07980144282514,
+    "reference_delta": -2.1291067221522653,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1976",
+    "feature": "payer",
+    "prediction": 35.07980144282514,
+    "reference_delta": -0.8663365783982826,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1976",
+    "feature": "sex",
+    "prediction": 35.07980144282514,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1976",
+    "feature": "home_state",
+    "prediction": 35.07980144282514,
+    "reference_delta": 0.13575123574051418,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1976",
+    "feature": "patient_age_at_admission",
+    "prediction": 35.07980144282514,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1976",
+    "feature": "admission_hour",
+    "prediction": 35.07980144282514,
+    "reference_delta": 2.989465476692743,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1976",
+    "feature": "admission_dow",
+    "prediction": 35.07980144282514,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1976",
+    "feature": "admission_month",
+    "prediction": 35.07980144282514,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "643",
+    "feature": "facility_id",
+    "prediction": 36.00636555485874,
+    "reference_delta": -0.5017219798145263,
+    "stable_direction": false
+  },
+  {
+    "row_id": "643",
+    "feature": "service_line",
+    "prediction": 36.00636555485874,
+    "reference_delta": -5.946453345648102,
+    "stable_direction": true
+  },
+  {
+    "row_id": "643",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.00636555485874,
+    "reference_delta": 0.3577396790833305,
+    "stable_direction": true
+  },
+  {
+    "row_id": "643",
+    "feature": "payer",
+    "prediction": 36.00636555485874,
+    "reference_delta": -1.9183488824677895,
+    "stable_direction": false
+  },
+  {
+    "row_id": "643",
+    "feature": "sex",
+    "prediction": 36.00636555485874,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "643",
+    "feature": "home_state",
+    "prediction": 36.00636555485874,
+    "reference_delta": 1.28435977873648,
+    "stable_direction": false
+  },
+  {
+    "row_id": "643",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.00636555485874,
+    "reference_delta": -0.265794181812538,
+    "stable_direction": true
+  },
+  {
+    "row_id": "643",
+    "feature": "admission_hour",
+    "prediction": 36.00636555485874,
+    "reference_delta": 0.26458573797035,
+    "stable_direction": true
+  },
+  {
+    "row_id": "643",
+    "feature": "admission_dow",
+    "prediction": 36.00636555485874,
+    "reference_delta": 0.7066802447653657,
+    "stable_direction": true
+  },
+  {
+    "row_id": "643",
+    "feature": "admission_month",
+    "prediction": 36.00636555485874,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "facility_id",
+    "prediction": 29.912904306150068,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1682",
+    "feature": "service_line",
+    "prediction": 29.912904306150068,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1682",
+    "feature": "primary_diagnosis_group",
+    "prediction": 29.912904306150068,
+    "reference_delta": 0.9900889160076645,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "payer",
+    "prediction": 29.912904306150068,
+    "reference_delta": -1.3456499437774099,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "sex",
+    "prediction": 29.912904306150068,
+    "reference_delta": -4.178549302081777,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1682",
+    "feature": "home_state",
+    "prediction": 29.912904306150068,
+    "reference_delta": -0.051214215345524394,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "patient_age_at_admission",
+    "prediction": 29.912904306150068,
+    "reference_delta": -0.7796174951535981,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "admission_hour",
+    "prediction": 29.912904306150068,
+    "reference_delta": -2.484462952163234,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "admission_dow",
+    "prediction": 29.912904306150068,
+    "reference_delta": -0.8063045513792062,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "admission_month",
+    "prediction": 29.912904306150068,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1872",
+    "feature": "facility_id",
+    "prediction": 32.838975452724014,
+    "reference_delta": -4.996933692382996,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1872",
+    "feature": "service_line",
+    "prediction": 32.838975452724014,
+    "reference_delta": -1.3667306046024592,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1872",
+    "feature": "primary_diagnosis_group",
+    "prediction": 32.838975452724014,
+    "reference_delta": 1.7786146333369537,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1872",
+    "feature": "payer",
+    "prediction": 32.838975452724014,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1872",
+    "feature": "sex",
+    "prediction": 32.838975452724014,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1872",
+    "feature": "home_state",
+    "prediction": 32.838975452724014,
+    "reference_delta": -1.8138042080430168,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1872",
+    "feature": "patient_age_at_admission",
+    "prediction": 32.838975452724014,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1872",
+    "feature": "admission_hour",
+    "prediction": 32.838975452724014,
+    "reference_delta": -3.7974569972483962,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1872",
+    "feature": "admission_dow",
+    "prediction": 32.838975452724014,
+    "reference_delta": -0.5631247097372096,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1872",
+    "feature": "admission_month",
+    "prediction": 32.838975452724014,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2014",
+    "feature": "facility_id",
+    "prediction": 34.64250844211746,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2014",
+    "feature": "service_line",
+    "prediction": 34.64250844211746,
+    "reference_delta": -0.35886870795303594,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2014",
+    "feature": "primary_diagnosis_group",
+    "prediction": 34.64250844211746,
+    "reference_delta": -0.49378522825268334,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2014",
+    "feature": "payer",
+    "prediction": 34.64250844211746,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2014",
+    "feature": "sex",
+    "prediction": 34.64250844211746,
+    "reference_delta": -0.07690127362283761,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2014",
+    "feature": "home_state",
+    "prediction": 34.64250844211746,
+    "reference_delta": 0.5018567744121469,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2014",
+    "feature": "patient_age_at_admission",
+    "prediction": 34.64250844211746,
+    "reference_delta": -0.265794181812538,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2014",
+    "feature": "admission_hour",
+    "prediction": 34.64250844211746,
+    "reference_delta": 0.4914234994863662,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2014",
+    "feature": "admission_dow",
+    "prediction": 34.64250844211746,
+    "reference_delta": 0.8912737415865308,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2014",
+    "feature": "admission_month",
+    "prediction": 34.64250844211746,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1861",
+    "feature": "facility_id",
+    "prediction": 36.52613563386858,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1861",
+    "feature": "service_line",
+    "prediction": 36.52613563386858,
+    "reference_delta": -1.9061216347579162,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1861",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.52613563386858,
+    "reference_delta": -0.17196066874811322,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1861",
+    "feature": "payer",
+    "prediction": 36.52613563386858,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1861",
+    "feature": "sex",
+    "prediction": 36.52613563386858,
+    "reference_delta": 0.43064147277497256,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1861",
+    "feature": "home_state",
+    "prediction": 36.52613563386858,
+    "reference_delta": 0.39036750199286274,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1861",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.52613563386858,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1861",
+    "feature": "admission_hour",
+    "prediction": 36.52613563386858,
+    "reference_delta": -0.6459372615652228,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1861",
+    "feature": "admission_dow",
+    "prediction": 36.52613563386858,
+    "reference_delta": -0.2071171430880696,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1861",
+    "feature": "admission_month",
+    "prediction": 36.52613563386858,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1458",
+    "feature": "facility_id",
+    "prediction": 36.81295519036115,
+    "reference_delta": -0.07289282383965201,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1458",
+    "feature": "service_line",
+    "prediction": 36.81295519036115,
+    "reference_delta": 1.0913226777231415,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1458",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.81295519036115,
+    "reference_delta": 1.6712308345604114,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1458",
+    "feature": "payer",
+    "prediction": 36.81295519036115,
+    "reference_delta": -1.341669554048572,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1458",
+    "feature": "sex",
+    "prediction": 36.81295519036115,
+    "reference_delta": -0.530015808434797,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1458",
+    "feature": "home_state",
+    "prediction": 36.81295519036115,
+    "reference_delta": 2.5861324162863752,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1458",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.81295519036115,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1458",
+    "feature": "admission_hour",
+    "prediction": 36.81295519036115,
+    "reference_delta": 2.1623763173582162,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1458",
+    "feature": "admission_dow",
+    "prediction": 36.81295519036115,
+    "reference_delta": -0.022523646266904507,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1458",
+    "feature": "admission_month",
+    "prediction": 36.81295519036115,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "facility_id",
+    "prediction": 40.0155649677063,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "374",
+    "feature": "service_line",
+    "prediction": 40.0155649677063,
+    "reference_delta": 0.44001546359492494,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "primary_diagnosis_group",
+    "prediction": 40.0155649677063,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "payer",
+    "prediction": 40.0155649677063,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "374",
+    "feature": "sex",
+    "prediction": 40.0155649677063,
+    "reference_delta": 0.43064147277497256,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "home_state",
+    "prediction": 40.0155649677063,
+    "reference_delta": -0.9200382796396767,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "patient_age_at_admission",
+    "prediction": 40.0155649677063,
+    "reference_delta": 2.755876423949765,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "admission_hour",
+    "prediction": 40.0155649677063,
+    "reference_delta": 2.3112379431770833,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "admission_dow",
+    "prediction": 40.0155649677063,
+    "reference_delta": 0.6079820794443549,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "admission_month",
+    "prediction": 40.0155649677063,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2250",
+    "feature": "facility_id",
+    "prediction": 33.110333810590575,
+    "reference_delta": -0.4494273298013951,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2250",
+    "feature": "service_line",
+    "prediction": 33.110333810590575,
+    "reference_delta": -4.660535402523216,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2250",
+    "feature": "primary_diagnosis_group",
+    "prediction": 33.110333810590575,
+    "reference_delta": 0.7153638959646074,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2250",
+    "feature": "payer",
+    "prediction": 33.110333810590575,
+    "reference_delta": 1.2645141829944357,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2250",
+    "feature": "sex",
+    "prediction": 33.110333810590575,
+    "reference_delta": 1.0953415363459484,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2250",
+    "feature": "home_state",
+    "prediction": 33.110333810590575,
+    "reference_delta": 0.39011067282537226,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2250",
+    "feature": "patient_age_at_admission",
+    "prediction": 33.110333810590575,
+    "reference_delta": -1.623691486631202,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2250",
+    "feature": "admission_hour",
+    "prediction": 33.110333810590575,
+    "reference_delta": -0.35608231445183947,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2250",
+    "feature": "admission_dow",
+    "prediction": 33.110333810590575,
+    "reference_delta": -1.3774857065103987,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2250",
+    "feature": "admission_month",
+    "prediction": 33.110333810590575,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "facility_id",
+    "prediction": 35.22268760855355,
+    "reference_delta": -1.1098562516233699,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "service_line",
+    "prediction": 35.22268760855355,
+    "reference_delta": 1.2553268134313456,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "primary_diagnosis_group",
+    "prediction": 35.22268760855355,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "payer",
+    "prediction": 35.22268760855355,
+    "reference_delta": 0.06857502341225086,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "sex",
+    "prediction": 35.22268760855355,
+    "reference_delta": 0.43064147277497256,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "home_state",
+    "prediction": 35.22268760855355,
+    "reference_delta": 1.2643322813571842,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1396",
+    "feature": "patient_age_at_admission",
+    "prediction": 35.22268760855355,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "admission_hour",
+    "prediction": 35.22268760855355,
+    "reference_delta": -0.9221356181458589,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "admission_dow",
+    "prediction": 35.22268760855355,
+    "reference_delta": -0.3785312129160445,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "admission_month",
+    "prediction": 35.22268760855355,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2301",
+    "feature": "facility_id",
+    "prediction": 31.767005699070097,
+    "reference_delta": -3.418233496449801,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2301",
+    "feature": "service_line",
+    "prediction": 31.767005699070097,
+    "reference_delta": -0.2801251329669867,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2301",
+    "feature": "primary_diagnosis_group",
+    "prediction": 31.767005699070097,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2301",
+    "feature": "payer",
+    "prediction": 31.767005699070097,
+    "reference_delta": -1.2071318324602345,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2301",
+    "feature": "sex",
+    "prediction": 31.767005699070097,
+    "reference_delta": -0.44220382214968623,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2301",
+    "feature": "home_state",
+    "prediction": 31.767005699070097,
+    "reference_delta": -2.60033064623925,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2301",
+    "feature": "patient_age_at_admission",
+    "prediction": 31.767005699070097,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2301",
+    "feature": "admission_hour",
+    "prediction": 31.767005699070097,
+    "reference_delta": -0.8323098362003876,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2301",
+    "feature": "admission_dow",
+    "prediction": 31.767005699070097,
+    "reference_delta": -1.3629452620176536,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2301",
+    "feature": "admission_month",
+    "prediction": 31.767005699070097,
+    "reference_delta": -0.6848638301123913,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2235",
+    "feature": "facility_id",
+    "prediction": 34.47027903296602,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2235",
+    "feature": "service_line",
+    "prediction": 34.47027903296602,
+    "reference_delta": -2.868970901463797,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2235",
+    "feature": "primary_diagnosis_group",
+    "prediction": 34.47027903296602,
+    "reference_delta": 1.528214631266657,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2235",
+    "feature": "payer",
+    "prediction": 34.47027903296602,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2235",
+    "feature": "sex",
+    "prediction": 34.47027903296602,
+    "reference_delta": -2.34809976863,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2235",
+    "feature": "home_state",
+    "prediction": 34.47027903296602,
+    "reference_delta": 1.495341805466282,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2235",
+    "feature": "patient_age_at_admission",
+    "prediction": 34.47027903296602,
+    "reference_delta": -1.911764659131066,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2235",
+    "feature": "admission_hour",
+    "prediction": 34.47027903296602,
+    "reference_delta": -0.529467448634847,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2235",
+    "feature": "admission_dow",
+    "prediction": 34.47027903296602,
+    "reference_delta": -2.3958286001122175,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2235",
+    "feature": "admission_month",
+    "prediction": 34.47027903296602,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1385",
+    "feature": "facility_id",
+    "prediction": 36.8365583610957,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1385",
+    "feature": "service_line",
+    "prediction": 36.8365583610957,
+    "reference_delta": 0.8793493544479034,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1385",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.8365583610957,
+    "reference_delta": 0.13076060107199083,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1385",
+    "feature": "payer",
+    "prediction": 36.8365583610957,
+    "reference_delta": 1.666099724803452,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1385",
+    "feature": "sex",
+    "prediction": 36.8365583610957,
+    "reference_delta": -1.832726809782514,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1385",
+    "feature": "home_state",
+    "prediction": 36.8365583610957,
+    "reference_delta": 0.5214678796893395,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1385",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.8365583610957,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1385",
+    "feature": "admission_hour",
+    "prediction": 36.8365583610957,
+    "reference_delta": 0.10202034254349002,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1385",
+    "feature": "admission_dow",
+    "prediction": 36.8365583610957,
+    "reference_delta": -1.6783261671469916,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1385",
+    "feature": "admission_month",
+    "prediction": 36.8365583610957,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2275",
+    "feature": "facility_id",
+    "prediction": 31.75671627507438,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2275",
+    "feature": "service_line",
+    "prediction": 31.75671627507438,
+    "reference_delta": -2.6443606374507347,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2275",
+    "feature": "primary_diagnosis_group",
+    "prediction": 31.75671627507438,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2275",
+    "feature": "payer",
+    "prediction": 31.75671627507438,
+    "reference_delta": 3.58959247586208,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2275",
+    "feature": "sex",
+    "prediction": 31.75671627507438,
+    "reference_delta": -2.140031637093113,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2275",
+    "feature": "home_state",
+    "prediction": 31.75671627507438,
+    "reference_delta": -0.9180314609257074,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2275",
+    "feature": "patient_age_at_admission",
+    "prediction": 31.75671627507438,
+    "reference_delta": 0.9437432601063307,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2275",
+    "feature": "admission_hour",
+    "prediction": 31.75671627507438,
+    "reference_delta": -1.988059102598168,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2275",
+    "feature": "admission_dow",
+    "prediction": 31.75671627507438,
+    "reference_delta": -0.058611870780005404,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2275",
+    "feature": "admission_month",
+    "prediction": 31.75671627507438,
+    "reference_delta": -0.7489713891987115,
+    "stable_direction": true
+  },
+  {
+    "row_id": "930",
+    "feature": "facility_id",
+    "prediction": 33.51152084113039,
+    "reference_delta": 0.7287555017091734,
+    "stable_direction": false
+  },
+  {
+    "row_id": "930",
+    "feature": "service_line",
+    "prediction": 33.51152084113039,
+    "reference_delta": -1.3530380135062643,
+    "stable_direction": false
+  },
+  {
+    "row_id": "930",
+    "feature": "primary_diagnosis_group",
+    "prediction": 33.51152084113039,
+    "reference_delta": -0.7351889409094952,
+    "stable_direction": true
+  },
+  {
+    "row_id": "930",
+    "feature": "payer",
+    "prediction": 33.51152084113039,
+    "reference_delta": -1.0307826952124017,
+    "stable_direction": false
+  },
+  {
+    "row_id": "930",
+    "feature": "sex",
+    "prediction": 33.51152084113039,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "930",
+    "feature": "home_state",
+    "prediction": 33.51152084113039,
+    "reference_delta": -0.9200382796396767,
+    "stable_direction": false
+  },
+  {
+    "row_id": "930",
+    "feature": "patient_age_at_admission",
+    "prediction": 33.51152084113039,
+    "reference_delta": -4.15427818664709,
+    "stable_direction": true
+  },
+  {
+    "row_id": "930",
+    "feature": "admission_hour",
+    "prediction": 33.51152084113039,
+    "reference_delta": 0.6431831729249566,
+    "stable_direction": true
+  },
+  {
+    "row_id": "930",
+    "feature": "admission_dow",
+    "prediction": 33.51152084113039,
+    "reference_delta": 1.2436093791787144,
+    "stable_direction": true
+  },
+  {
+    "row_id": "930",
+    "feature": "admission_month",
+    "prediction": 33.51152084113039,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2173",
+    "feature": "facility_id",
+    "prediction": 27.466099075996677,
+    "reference_delta": -4.71086014479263,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2173",
+    "feature": "service_line",
+    "prediction": 27.466099075996677,
+    "reference_delta": 0.573245432110145,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2173",
+    "feature": "primary_diagnosis_group",
+    "prediction": 27.466099075996677,
+    "reference_delta": 0.23340527400872446,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2173",
+    "feature": "payer",
+    "prediction": 27.466099075996677,
+    "reference_delta": -0.8917781374948461,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2173",
+    "feature": "sex",
+    "prediction": 27.466099075996677,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2173",
+    "feature": "home_state",
+    "prediction": 27.466099075996677,
+    "reference_delta": -9.383849362352304,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2173",
+    "feature": "patient_age_at_admission",
+    "prediction": 27.466099075996677,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2173",
+    "feature": "admission_hour",
+    "prediction": 27.466099075996677,
+    "reference_delta": -1.8555319471622056,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2173",
+    "feature": "admission_dow",
+    "prediction": 27.466099075996677,
+    "reference_delta": -2.427674971812042,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2173",
+    "feature": "admission_month",
+    "prediction": 27.466099075996677,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1430",
+    "feature": "facility_id",
+    "prediction": 36.384320794128655,
+    "reference_delta": -0.43418096295820163,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1430",
+    "feature": "service_line",
+    "prediction": 36.384320794128655,
+    "reference_delta": -2.327971838858005,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1430",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.384320794128655,
+    "reference_delta": 1.6153188724200902,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1430",
+    "feature": "payer",
+    "prediction": 36.384320794128655,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1430",
+    "feature": "sex",
+    "prediction": 36.384320794128655,
+    "reference_delta": -1.3048822476354687,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1430",
+    "feature": "home_state",
+    "prediction": 36.384320794128655,
+    "reference_delta": 0.6806382535235187,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1430",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.384320794128655,
+    "reference_delta": -0.7549210703371898,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1430",
+    "feature": "admission_hour",
+    "prediction": 36.384320794128655,
+    "reference_delta": -0.9004228342781175,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1430",
+    "feature": "admission_dow",
+    "prediction": 36.384320794128655,
+    "reference_delta": 0.5423141175272974,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1430",
+    "feature": "admission_month",
+    "prediction": 36.384320794128655,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "facility_id",
+    "prediction": 24.300892857519667,
+    "reference_delta": -3.7250847711685218,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "service_line",
+    "prediction": 24.300892857519667,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2147",
+    "feature": "primary_diagnosis_group",
+    "prediction": 24.300892857519667,
+    "reference_delta": -0.8936395771895143,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "payer",
+    "prediction": 24.300892857519667,
+    "reference_delta": -4.52982057243117,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2147",
+    "feature": "sex",
+    "prediction": 24.300892857519667,
+    "reference_delta": -1.6012141542757412,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2147",
+    "feature": "home_state",
+    "prediction": 24.300892857519667,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2147",
+    "feature": "patient_age_at_admission",
+    "prediction": 24.300892857519667,
+    "reference_delta": -5.878191904176788,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "admission_hour",
+    "prediction": 24.300892857519667,
+    "reference_delta": -1.9325147293081208,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "admission_dow",
+    "prediction": 24.300892857519667,
+    "reference_delta": -0.9536199961870011,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "admission_month",
+    "prediction": 24.300892857519667,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "facility_id",
+    "prediction": 36.452033686554714,
+    "reference_delta": 0.9527796476147046,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1390",
+    "feature": "service_line",
+    "prediction": 36.452033686554714,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1390",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.452033686554714,
+    "reference_delta": -1.279314573460077,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "payer",
+    "prediction": 36.452033686554714,
+    "reference_delta": -1.4387584309070007,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1390",
+    "feature": "sex",
+    "prediction": 36.452033686554714,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1390",
+    "feature": "home_state",
+    "prediction": 36.452033686554714,
+    "reference_delta": 3.0455056487980627,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.452033686554714,
+    "reference_delta": -4.308376117593035,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "admission_hour",
+    "prediction": 36.452033686554714,
+    "reference_delta": 1.0959111768878884,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "admission_dow",
+    "prediction": 36.452033686554714,
+    "reference_delta": -0.7879436832196447,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "admission_month",
+    "prediction": 36.452033686554714,
+    "reference_delta": -0.6815306724397132,
+    "stable_direction": true
+  },
+  {
+    "row_id": "353",
+    "feature": "facility_id",
+    "prediction": 30.63807036747596,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "353",
+    "feature": "service_line",
+    "prediction": 30.63807036747596,
+    "reference_delta": -7.665900748644589,
+    "stable_direction": false
+  },
+  {
+    "row_id": "353",
+    "feature": "primary_diagnosis_group",
+    "prediction": 30.63807036747596,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "353",
+    "feature": "payer",
+    "prediction": 30.63807036747596,
+    "reference_delta": -2.205542301491022,
+    "stable_direction": false
+  },
+  {
+    "row_id": "353",
+    "feature": "sex",
+    "prediction": 30.63807036747596,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "353",
+    "feature": "home_state",
+    "prediction": 30.63807036747596,
+    "reference_delta": -0.5874643227543075,
+    "stable_direction": false
+  },
+  {
+    "row_id": "353",
+    "feature": "patient_age_at_admission",
+    "prediction": 30.63807036747596,
+    "reference_delta": -1.921667766673771,
+    "stable_direction": true
+  },
+  {
+    "row_id": "353",
+    "feature": "admission_hour",
+    "prediction": 30.63807036747596,
+    "reference_delta": -1.4104482174624025,
+    "stable_direction": true
+  },
+  {
+    "row_id": "353",
+    "feature": "admission_dow",
+    "prediction": 30.63807036747596,
+    "reference_delta": -0.7879436832196411,
+    "stable_direction": true
+  },
+  {
+    "row_id": "353",
+    "feature": "admission_month",
+    "prediction": 30.63807036747596,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1790",
+    "feature": "facility_id",
+    "prediction": 38.47154851426621,
+    "reference_delta": 0.07495734860469128,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1790",
+    "feature": "service_line",
+    "prediction": 38.47154851426621,
+    "reference_delta": 2.19442148261799,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1790",
+    "feature": "primary_diagnosis_group",
+    "prediction": 38.47154851426621,
+    "reference_delta": 2.1392045912859174,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1790",
+    "feature": "payer",
+    "prediction": 38.47154851426621,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1790",
+    "feature": "sex",
+    "prediction": 38.47154851426621,
+    "reference_delta": 0.8566763227681804,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1790",
+    "feature": "home_state",
+    "prediction": 38.47154851426621,
+    "reference_delta": -0.6798924444480008,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1790",
+    "feature": "patient_age_at_admission",
+    "prediction": 38.47154851426621,
+    "reference_delta": 2.286507606635041,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1790",
+    "feature": "admission_hour",
+    "prediction": 38.47154851426621,
+    "reference_delta": 1.258255926360313,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1790",
+    "feature": "admission_dow",
+    "prediction": 38.47154851426621,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1790",
+    "feature": "admission_month",
+    "prediction": 38.47154851426621,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "facility_id",
+    "prediction": 36.38175624499855,
+    "reference_delta": -1.1456181714696427,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "service_line",
+    "prediction": 36.38175624499855,
+    "reference_delta": -5.504677716868848,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2455",
+    "feature": "primary_diagnosis_group",
+    "prediction": 36.38175624499855,
+    "reference_delta": 0.26564834881756383,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "payer",
+    "prediction": 36.38175624499855,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2455",
+    "feature": "sex",
+    "prediction": 36.38175624499855,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2455",
+    "feature": "home_state",
+    "prediction": 36.38175624499855,
+    "reference_delta": 0.1932971798779448,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "patient_age_at_admission",
+    "prediction": 36.38175624499855,
+    "reference_delta": 0.7054004687754301,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "admission_hour",
+    "prediction": 36.38175624499855,
+    "reference_delta": 0.21431740148470624,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "admission_dow",
+    "prediction": 36.38175624499855,
+    "reference_delta": 0.0989094250029865,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "admission_month",
+    "prediction": 36.38175624499855,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1366",
+    "feature": "facility_id",
+    "prediction": 32.683781142360445,
+    "reference_delta": 1.4741764171948226,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1366",
+    "feature": "service_line",
+    "prediction": 32.683781142360445,
+    "reference_delta": -2.5828354525632307,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1366",
+    "feature": "primary_diagnosis_group",
+    "prediction": 32.683781142360445,
+    "reference_delta": -2.1445681400400005,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1366",
+    "feature": "payer",
+    "prediction": 32.683781142360445,
+    "reference_delta": -3.448827583129706,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1366",
+    "feature": "sex",
+    "prediction": 32.683781142360445,
+    "reference_delta": 0.43064147277495834,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1366",
+    "feature": "home_state",
+    "prediction": 32.683781142360445,
+    "reference_delta": 1.632510252168391,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1366",
+    "feature": "patient_age_at_admission",
+    "prediction": 32.683781142360445,
+    "reference_delta": 1.1451422531860658,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1366",
+    "feature": "admission_hour",
+    "prediction": 32.683781142360445,
+    "reference_delta": -2.272710821299029,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1366",
+    "feature": "admission_dow",
+    "prediction": 32.683781142360445,
+    "reference_delta": 0.0989094250029865,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1366",
+    "feature": "admission_month",
+    "prediction": 32.683781142360445,
+    "reference_delta": -0.6848638301123913,
+    "stable_direction": true
+  }
+]

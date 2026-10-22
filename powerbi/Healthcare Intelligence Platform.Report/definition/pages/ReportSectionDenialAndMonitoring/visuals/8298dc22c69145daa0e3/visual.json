@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "8298dc22c69145daa0e3",
+  "position": {
+    "x": 828.97102037890909,
+    "y": 234.48981054542847,
+    "z": 1000,
+    "height": 270.81921781303009,
+    "width": 440.35645172850417
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_model_drift"
+                    }
+                  },
+                  "Property": "model_name"
+                }
+              },
+              "queryRef": "rpt_model_drift.model_name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_model_drift"
+                    }
+                  },
+                  "Property": "feature"
+                }
+              },
+              "queryRef": "rpt_model_drift.feature"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_model_drift"
+                    }
+                  },
+                  "Property": "psi"
+                }
+              },
+              "queryRef": "rpt_model_drift.psi"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_model_drift"
+                    }
+                  },
+                  "Property": "threshold"
+                }
+              },
+              "queryRef": "rpt_model_drift.threshold"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_model_drift"
+                    }
+                  },
+                  "Property": "status"
+                }
+              },
+              "queryRef": "rpt_model_drift.status"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Reference VS Evaluation Feature Drift'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

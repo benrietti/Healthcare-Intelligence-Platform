@@ -12,3 +12,8 @@ logs/
 .env
 
 warehouse/.user.yml
+
+data/demo/
+data/cloud/
+
+*.egg-info/

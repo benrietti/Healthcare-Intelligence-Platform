@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: rpt_claim_denial_queue
+    columns:
+      - name: claim_id
+        tests: [not_null, unique]
+      - name: denial_probability
+        tests: [not_null]
+  - name: rpt_model_drift
+    columns:
+      - name: model_name
+        tests: [not_null]
+      - name: feature
+        tests: [not_null]
+  - name: rpt_bed_readiness
+    columns:
+      - name: encounter_id
+        tests: [not_null, unique]

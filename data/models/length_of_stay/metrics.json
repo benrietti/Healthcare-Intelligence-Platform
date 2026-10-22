@@ -1,21 +1,32 @@
 {
   "model": "length_of_stay",
-  "trained_at": "2026-10-21T13:35:30.908458+00:00",
-  "cutoff_ts": "2025-06-06T09:36:00+00:00",
-  "train": {
-    "mae": 4.789525452287114,
-    "rmse": 7.741764161937183,
-    "r2": 0.8820411428448953,
-    "mean_actual": 35.12429378531073,
-    "mean_predicted": 35.12161359087162,
-    "n_samples": 531
-  },
+  "prediction_time": "admission_ts",
+  "features": [
+    "facility_id",
+    "service_line",
+    "primary_diagnosis_group",
+    "payer",
+    "sex",
+    "home_state",
+    "patient_age_at_admission",
+    "admission_hour",
+    "admission_dow",
+    "admission_month"
+  ],
+  "cutoff": "2025-05-30 16:26:00+00:00",
+  "n_train": 2121,
+  "n_purged": 3,
   "test": {
-    "mae": 13.498713392234114,
-    "rmse": 17.439682221331342,
-    "r2": -0.371477492244471,
-    "mean_actual": 30.87067669172932,
-    "mean_predicted": 35.39670692017164,
-    "n_samples": 133
-  }
+    "mae": 14.017491720269787,
+    "rmse": 18.433526452881498,
+    "r2": -0.019245514086074333,
+    "n_samples": 532
+  },
+  "baseline": {
+    "mae": 13.892632217034807,
+    "rmse": 18.27223067569299,
+    "r2": -0.0014864882180964933,
+    "n_samples": 532
+  },
+  "synthetic_only": true
 }

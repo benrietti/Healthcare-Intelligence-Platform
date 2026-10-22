@@ -18,3 +18,15 @@ models:
       +materialized: table
     marts:
       +materialized: table
+
+seeds:
+  healthcare_capstone:
+    bed_milestones:
+      +column_types:
+        admission_ts: timestamp
+        discharge_ts: timestamp
+        administrative_discharge_ts: timestamp
+        transport_departure_ts: timestamp
+        cleaning_complete_ts: timestamp
+        ed_arrival_ts: timestamp
+        ed_departure_ts: timestamp

@@ -14,12 +14,27 @@ A synthetic-data healthcare platform with source code for generation, cloud infr
 - Clear architecture notes, trade-offs, and operational telemetry.
 
 ## Build status
-| Phase | Scope | Status |
-|---|---|---|
-| 1. Data engineering | Synthetic data contract, generator, GCP infrastructure, ingestion, dbt warehouse | Complete |
-| 2. Data science | Time-aware features, 30-day readmission and length-of-stay models, observability | Complete |
-| 3. BI development | Clinical, operational, financial, and pipeline-health Power BI hub | Complete |
-| 4. Case study | Architecture, trade-offs, runbook, and portfolio narrative | Complete |
+
+| Component | Status |
+|---|---|
+| Source generation, admission-time ML, denial ranking, explanations, drift, local reporting and quality gates | Executed locally; evidence in `docs/evidence/` |
+| BigQuery/dbt additions, freshness, query budget and cloud monitoring | Source implemented; dbt parse passed; authenticated cloud execution required |
+| CI and Airflow | Definitions implemented; hosted/worker execution required |
+| Power BI denial-risk and monitoring page | Source implemented; Desktop rendering and refresh required |
+
+See [the build runbook](docs/portfolio-build-runbook.md) for reproducible commands,
+acceptance checks and the exact distinction between local evidence and cloud/BI validation.
+
+## Run the full local demonstration
+
+```bash
+python -m pip install -e . -r requirements-demo.txt
+python -m healthcare_capstone.demo --output data/demo --patients 2000 --seed 42
+python scripts/quality_gate.py --input data/demo
+python scripts/render_demo.py --input data/demo
+```
+
+Open `data/demo/review.html` to inspect model metrics, claim rankings and data quality.
 
 ## Quick start: generate the synthetic source data
 

@@ -10,5 +10,9 @@ select
   safe_cast(paid_amount as numeric) as paid_amount,
   cast(claim_status as string) as claim_status,
   nullif(cast(denial_reason as string), '') as denial_reason,
+  safe_cast(authorization_present as bool) as authorization_present,
+  safe_cast(documentation_complete as bool) as documentation_complete,
+  cast(procedure_group as string) as procedure_group,
+  safe_cast(adjudicated_at as timestamp) as adjudicated_at,
   safe_cast(synthetic as bool) as synthetic
 from {{ source('synthetic_raw', 'claims') }}

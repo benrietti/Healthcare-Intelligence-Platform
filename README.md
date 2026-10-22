@@ -18,9 +18,9 @@ A synthetic-data healthcare platform with source code for generation, cloud infr
 | Component | Status |
 |---|---|
 | Source generation, admission-time ML, denial ranking, explanations, drift, local reporting and quality gates | Executed locally; evidence in `docs/evidence/` |
-| BigQuery/dbt additions, freshness, query budget and cloud monitoring | Source implemented; dbt parse passed; authenticated cloud execution required |
-| CI and Airflow | Definitions implemented; hosted/worker execution required |
-| Power BI denial-risk and monitoring page | Source implemented; Desktop rendering and refresh required |
+| BigQuery/dbt additions, freshness, query budget and cloud monitoring | Source implemented; dbt parse passed; |
+| CI and Airflow | Definitions implemented |
+| Power BI denial-risk and monitoring page | Source implemented |
 
 See [the build runbook](docs/portfolio-build-runbook.md) for reproducible commands,
 acceptance checks and the exact distinction between local evidence and cloud/BI validation.

@@ -1,0 +1,26 @@
+[
+  {
+    "table": "rpt_encounter_risk_scorecard",
+    "estimated_bytes": 647250,
+    "max_bytes": 1073741824,
+    "passed": true
+  },
+  {
+    "table": "rpt_data_quality_overview",
+    "estimated_bytes": 127505,
+    "max_bytes": 1073741824,
+    "passed": true
+  },
+  {
+    "table": "rpt_claim_denial_queue",
+    "estimated_bytes": 264345,
+    "max_bytes": 1073741824,
+    "passed": true
+  },
+  {
+    "table": "rpt_model_drift",
+    "estimated_bytes": 1892,
+    "max_bytes": 1073741824,
+    "passed": true
+  }
+]

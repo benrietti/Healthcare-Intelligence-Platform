@@ -1,0 +1,33 @@
+{
+  "model": "length_of_stay",
+  "prediction_time": "admission_ts",
+  "features": [
+    "facility_id",
+    "service_line",
+    "primary_diagnosis_group",
+    "payer",
+    "sex",
+    "home_state",
+    "patient_age_at_admission",
+    "admission_hour",
+    "admission_dow",
+    "admission_month"
+  ],
+  "cutoff": "2025-05-30 16:26:00+00:00",
+  "n_train": 2121,
+  "n_purged": 3,
+  "test": {
+    "mae": 14.017491720269787,
+    "rmse": 18.433526452881498,
+    "r2": -0.019245514086074333,
+    "n_samples": 532
+  },
+  "baseline": {
+    "mae": 13.892632217034807,
+    "rmse": 18.27223067569299,
+    "r2": -0.0014864882180964933,
+    "n_samples": 532
+  },
+  "synthetic_only": true,
+  "training_duration_seconds": 0.125
+}

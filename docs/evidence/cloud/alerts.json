@@ -1,0 +1,9 @@
+{
+  "evaluated_at": "2026-10-22T17:12:03.062762+00:00",
+  "owner": "analytics-platform-owner",
+  "response": "Inspect source completeness, recent changes, and failed checks; rerun before reporting refresh.",
+  "alerts": [
+    "drift: readmission_30d.admission_month PSI=3.1565167250296193",
+    "drift: length_of_stay.admission_month PSI=3.2163508123211786"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "model": "readmission_30d",
+  "prediction_time": "admission_ts",
+  "features": [
+    "facility_id",
+    "service_line",
+    "primary_diagnosis_group",
+    "payer",
+    "sex",
+    "home_state",
+    "patient_age_at_admission",
+    "admission_hour",
+    "admission_dow",
+    "admission_month"
+  ],
+  "cutoff": "2025-05-30 03:26:00+00:00",
+  "n_train": 1994,
+  "n_purged": 127,
+  "test": {
+    "roc_auc": 0.5565180346492474,
+    "average_precision": 0.07134439521346855,
+    "brier_score": 0.05201243511733672,
+    "positive_rate": 0.05273069679849341,
+    "n_samples": 531
+  },
+  "baseline": {
+    "roc_auc": 0.5,
+    "average_precision": 0.05273069679849341,
+    "brier_score": 0.05052614611500968,
+    "positive_rate": 0.05273069679849341,
+    "n_samples": 531
+  },
+  "synthetic_only": true,
+  "training_duration_seconds": 0.1409999999887077,
+  "top_20pct_precision": 0.07547169811320754,
+  "review_fraction": 0.19962335216572505
+}

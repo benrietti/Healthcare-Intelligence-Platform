@@ -1,0 +1,42 @@
+[
+  {
+    "feature": "payer",
+    "psi": 0.004635022364268117,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "billed_amount",
+    "psi": 0.008529175863030829,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "authorization_present",
+    "psi": 0.0,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "documentation_complete",
+    "psi": 0.0,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  },
+  {
+    "feature": "procedure_group",
+    "psi": 0.008254289715420443,
+    "threshold": 0.2,
+    "status": "ok",
+    "reference_missing_rate": 0.0,
+    "current_missing_rate": 0.0
+  }
+]

@@ -1,0 +1,1752 @@
+[
+  {
+    "row_id": "583",
+    "feature": "payer",
+    "prediction": 0.1933725344815543,
+    "reference_delta": -0.048055043303520395,
+    "stable_direction": true
+  },
+  {
+    "row_id": "583",
+    "feature": "billed_amount",
+    "prediction": 0.1933725344815543,
+    "reference_delta": -0.04857700275507537,
+    "stable_direction": false
+  },
+  {
+    "row_id": "583",
+    "feature": "authorization_present",
+    "prediction": 0.1933725344815543,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "583",
+    "feature": "documentation_complete",
+    "prediction": 0.1933725344815543,
+    "reference_delta": 0.1576210838576998,
+    "stable_direction": true
+  },
+  {
+    "row_id": "583",
+    "feature": "procedure_group",
+    "prediction": 0.1933725344815543,
+    "reference_delta": -0.01593394329081993,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1773",
+    "feature": "payer",
+    "prediction": 0.2403968610847737,
+    "reference_delta": -0.04449626419421121,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1773",
+    "feature": "billed_amount",
+    "prediction": 0.2403968610847737,
+    "reference_delta": 0.03963752509061538,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1773",
+    "feature": "authorization_present",
+    "prediction": 0.2403968610847737,
+    "reference_delta": 0.20710677975512648,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1773",
+    "feature": "documentation_complete",
+    "prediction": 0.2403968610847737,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1773",
+    "feature": "procedure_group",
+    "prediction": 0.2403968610847737,
+    "reference_delta": -0.300554723038913,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1071",
+    "feature": "payer",
+    "prediction": 0.2647117710717206,
+    "reference_delta": 0.038112299758099544,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1071",
+    "feature": "billed_amount",
+    "prediction": 0.2647117710717206,
+    "reference_delta": -0.10013822843772974,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1071",
+    "feature": "authorization_present",
+    "prediction": 0.2647117710717206,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1071",
+    "feature": "documentation_complete",
+    "prediction": 0.2647117710717206,
+    "reference_delta": 0.22170109649980566,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1071",
+    "feature": "procedure_group",
+    "prediction": 0.2647117710717206,
+    "reference_delta": -0.15186653809788225,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "payer",
+    "prediction": 0.07564883706957685,
+    "reference_delta": 0.01036543364246327,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "billed_amount",
+    "prediction": 0.07564883706957685,
+    "reference_delta": -0.029819733228662756,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1244",
+    "feature": "authorization_present",
+    "prediction": 0.07564883706957685,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "documentation_complete",
+    "prediction": 0.07564883706957685,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1244",
+    "feature": "procedure_group",
+    "prediction": 0.07564883706957685,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1313",
+    "feature": "payer",
+    "prediction": 0.039410971594243,
+    "reference_delta": -0.007937805575299599,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "billed_amount",
+    "prediction": 0.039410971594243,
+    "reference_delta": -0.06663089548760384,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "authorization_present",
+    "prediction": 0.039410971594243,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "documentation_complete",
+    "prediction": 0.039410971594243,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1313",
+    "feature": "procedure_group",
+    "prediction": 0.039410971594243,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1945",
+    "feature": "payer",
+    "prediction": 0.2762948347429088,
+    "reference_delta": -0.05909207261039545,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "billed_amount",
+    "prediction": 0.2762948347429088,
+    "reference_delta": 0.09686861391603552,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "authorization_present",
+    "prediction": 0.2762948347429088,
+    "reference_delta": 0.2336393644737454,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "documentation_complete",
+    "prediction": 0.2762948347429088,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1945",
+    "feature": "procedure_group",
+    "prediction": 0.2762948347429088,
+    "reference_delta": -0.053408175868645436,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2644",
+    "feature": "payer",
+    "prediction": 0.03329008132964724,
+    "reference_delta": -0.010843553395693352,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2644",
+    "feature": "billed_amount",
+    "prediction": 0.03329008132964724,
+    "reference_delta": -0.008765950547201515,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2644",
+    "feature": "authorization_present",
+    "prediction": 0.03329008132964724,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2644",
+    "feature": "documentation_complete",
+    "prediction": 0.03329008132964724,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2644",
+    "feature": "procedure_group",
+    "prediction": 0.03329008132964724,
+    "reference_delta": -0.07237438533198703,
+    "stable_direction": false
+  },
+  {
+    "row_id": "160",
+    "feature": "payer",
+    "prediction": 0.027528529906232106,
+    "reference_delta": -0.00704750171943079,
+    "stable_direction": true
+  },
+  {
+    "row_id": "160",
+    "feature": "billed_amount",
+    "prediction": 0.027528529906232106,
+    "reference_delta": -0.014527501970616648,
+    "stable_direction": false
+  },
+  {
+    "row_id": "160",
+    "feature": "authorization_present",
+    "prediction": 0.027528529906232106,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "160",
+    "feature": "documentation_complete",
+    "prediction": 0.027528529906232106,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "160",
+    "feature": "procedure_group",
+    "prediction": 0.027528529906232106,
+    "reference_delta": -0.05437832403931133,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1120",
+    "feature": "payer",
+    "prediction": 0.06731949991916183,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1120",
+    "feature": "billed_amount",
+    "prediction": 0.06731949991916183,
+    "reference_delta": 0.01626315874021409,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "authorization_present",
+    "prediction": 0.06731949991916183,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "documentation_complete",
+    "prediction": 0.06731949991916183,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1120",
+    "feature": "procedure_group",
+    "prediction": 0.06731949991916183,
+    "reference_delta": -0.011753642939141579,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1872",
+    "feature": "payer",
+    "prediction": 0.04368244574535127,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1872",
+    "feature": "billed_amount",
+    "prediction": 0.04368244574535127,
+    "reference_delta": -0.0073738954335964765,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1872",
+    "feature": "authorization_present",
+    "prediction": 0.04368244574535127,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1872",
+    "feature": "documentation_complete",
+    "prediction": 0.04368244574535127,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1872",
+    "feature": "procedure_group",
+    "prediction": 0.04368244574535127,
+    "reference_delta": -0.07132425891878706,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "payer",
+    "prediction": 0.10374757835250134,
+    "reference_delta": -0.043881926670634924,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "billed_amount",
+    "prediction": 0.10374757835250134,
+    "reference_delta": -0.0017209919457382705,
+    "stable_direction": false
+  },
+  {
+    "row_id": "857",
+    "feature": "authorization_present",
+    "prediction": 0.10374757835250134,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "documentation_complete",
+    "prediction": 0.10374757835250134,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "857",
+    "feature": "procedure_group",
+    "prediction": 0.10374757835250134,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1390",
+    "feature": "payer",
+    "prediction": 0.10580014865681954,
+    "reference_delta": -0.02096748429444216,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "billed_amount",
+    "prediction": 0.10580014865681954,
+    "reference_delta": 0.0003315783585799287,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "authorization_present",
+    "prediction": 0.10580014865681954,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "documentation_complete",
+    "prediction": 0.10580014865681954,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1390",
+    "feature": "procedure_group",
+    "prediction": 0.10580014865681954,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1374",
+    "feature": "payer",
+    "prediction": 0.05494648375083583,
+    "reference_delta": 0.005061168627809226,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "billed_amount",
+    "prediction": 0.05494648375083583,
+    "reference_delta": 0.012890451873987074,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "authorization_present",
+    "prediction": 0.05494648375083583,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "documentation_complete",
+    "prediction": 0.05494648375083583,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1374",
+    "feature": "procedure_group",
+    "prediction": 0.05494648375083583,
+    "reference_delta": -0.10030592758807416,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2275",
+    "feature": "payer",
+    "prediction": 0.04861771907454814,
+    "reference_delta": 0.0011174350760730922,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2275",
+    "feature": "billed_amount",
+    "prediction": 0.04861771907454814,
+    "reference_delta": -0.008989283056032936,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2275",
+    "feature": "authorization_present",
+    "prediction": 0.04861771907454814,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2275",
+    "feature": "documentation_complete",
+    "prediction": 0.04861771907454814,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2275",
+    "feature": "procedure_group",
+    "prediction": 0.04861771907454814,
+    "reference_delta": -0.0754842858126944,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1019",
+    "feature": "payer",
+    "prediction": 0.7669781762082766,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1019",
+    "feature": "billed_amount",
+    "prediction": 0.7669781762082766,
+    "reference_delta": 0.056703945449184334,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1019",
+    "feature": "authorization_present",
+    "prediction": 0.7669781762082766,
+    "reference_delta": 0.4568848698780224,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1019",
+    "feature": "documentation_complete",
+    "prediction": 0.7669781762082766,
+    "reference_delta": 0.1904249180277392,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1019",
+    "feature": "procedure_group",
+    "prediction": 0.7669781762082766,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2333",
+    "feature": "payer",
+    "prediction": 0.05663085855667805,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2333",
+    "feature": "billed_amount",
+    "prediction": 0.05663085855667805,
+    "reference_delta": 0.005574517377730306,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2333",
+    "feature": "authorization_present",
+    "prediction": 0.05663085855667805,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2333",
+    "feature": "documentation_complete",
+    "prediction": 0.05663085855667805,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2333",
+    "feature": "procedure_group",
+    "prediction": 0.05663085855667805,
+    "reference_delta": -0.09572355846789168,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1458",
+    "feature": "payer",
+    "prediction": 0.22978237114571556,
+    "reference_delta": 0.03199906728282381,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1458",
+    "feature": "billed_amount",
+    "prediction": 0.22978237114571556,
+    "reference_delta": -0.13686575795565573,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1458",
+    "feature": "authorization_present",
+    "prediction": 0.22978237114571556,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1458",
+    "feature": "documentation_complete",
+    "prediction": 0.22978237114571556,
+    "reference_delta": 0.18176839889926483,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1458",
+    "feature": "procedure_group",
+    "prediction": 0.22978237114571556,
+    "reference_delta": -0.030293261725208104,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2444",
+    "feature": "payer",
+    "prediction": 0.23415887048667913,
+    "reference_delta": 0.013988647190051828,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2444",
+    "feature": "billed_amount",
+    "prediction": 0.23415887048667913,
+    "reference_delta": -0.072899589745514,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2444",
+    "feature": "authorization_present",
+    "prediction": 0.23415887048667913,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2444",
+    "feature": "documentation_complete",
+    "prediction": 0.23415887048667913,
+    "reference_delta": 0.19176197621121904,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2444",
+    "feature": "procedure_group",
+    "prediction": 0.23415887048667913,
+    "reference_delta": -0.11852878336003828,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1682",
+    "feature": "payer",
+    "prediction": 0.046856569375226864,
+    "reference_delta": 0.007058452439410411,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "billed_amount",
+    "prediction": 0.046856569375226864,
+    "reference_delta": 0.00480053749837811,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "authorization_present",
+    "prediction": 0.046856569375226864,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "documentation_complete",
+    "prediction": 0.046856569375226864,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1682",
+    "feature": "procedure_group",
+    "prediction": 0.046856569375226864,
+    "reference_delta": -0.09197178322794675,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1861",
+    "feature": "payer",
+    "prediction": 0.042760991916167904,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1861",
+    "feature": "billed_amount",
+    "prediction": 0.042760991916167904,
+    "reference_delta": -0.00829534926277984,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1861",
+    "feature": "authorization_present",
+    "prediction": 0.042760991916167904,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1861",
+    "feature": "documentation_complete",
+    "prediction": 0.042760991916167904,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1861",
+    "feature": "procedure_group",
+    "prediction": 0.042760991916167904,
+    "reference_delta": -0.0840066410350938,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2147",
+    "feature": "payer",
+    "prediction": 0.27938064193237255,
+    "reference_delta": -0.052233586641251106,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "billed_amount",
+    "prediction": 0.27938064193237255,
+    "reference_delta": 0.07862130593821423,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "authorization_present",
+    "prediction": 0.27938064193237255,
+    "reference_delta": 0.2475040049022143,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "documentation_complete",
+    "prediction": 0.27938064193237255,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2147",
+    "feature": "procedure_group",
+    "prediction": 0.27938064193237255,
+    "reference_delta": -0.30146544214373827,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1976",
+    "feature": "payer",
+    "prediction": 0.13499289244445162,
+    "reference_delta": 0.004663430584918221,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1976",
+    "feature": "billed_amount",
+    "prediction": 0.13499289244445162,
+    "reference_delta": -0.00527567403943216,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1976",
+    "feature": "authorization_present",
+    "prediction": 0.13499289244445162,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1976",
+    "feature": "documentation_complete",
+    "prediction": 0.13499289244445162,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1976",
+    "feature": "procedure_group",
+    "prediction": 0.13499289244445162,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1934",
+    "feature": "payer",
+    "prediction": 0.03020059301396724,
+    "reference_delta": -0.009597102027466563,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "billed_amount",
+    "prediction": 0.03020059301396724,
+    "reference_delta": -0.011855438862881516,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1934",
+    "feature": "authorization_present",
+    "prediction": 0.03020059301396724,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "documentation_complete",
+    "prediction": 0.03020059301396724,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1934",
+    "feature": "procedure_group",
+    "prediction": 0.03020059301396724,
+    "reference_delta": -0.0663283595586557,
+    "stable_direction": false
+  },
+  {
+    "row_id": "353",
+    "feature": "payer",
+    "prediction": 0.03604377806002751,
+    "reference_delta": 0.0017212691741698496,
+    "stable_direction": false
+  },
+  {
+    "row_id": "353",
+    "feature": "billed_amount",
+    "prediction": 0.03604377806002751,
+    "reference_delta": -0.02156322407055357,
+    "stable_direction": false
+  },
+  {
+    "row_id": "353",
+    "feature": "authorization_present",
+    "prediction": 0.03604377806002751,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "353",
+    "feature": "documentation_complete",
+    "prediction": 0.03604377806002751,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "353",
+    "feature": "procedure_group",
+    "prediction": 0.03604377806002751,
+    "reference_delta": -0.057889390560454945,
+    "stable_direction": false
+  },
+  {
+    "row_id": "683",
+    "feature": "payer",
+    "prediction": 0.06327943545382343,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "683",
+    "feature": "billed_amount",
+    "prediction": 0.06327943545382343,
+    "reference_delta": 0.012223094274875689,
+    "stable_direction": true
+  },
+  {
+    "row_id": "683",
+    "feature": "authorization_present",
+    "prediction": 0.06327943545382343,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "683",
+    "feature": "documentation_complete",
+    "prediction": 0.06327943545382343,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "683",
+    "feature": "procedure_group",
+    "prediction": 0.06327943545382343,
+    "reference_delta": -0.10495752901109999,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1412",
+    "feature": "payer",
+    "prediction": 0.7126023000736007,
+    "reference_delta": 0.00638842509989479,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1412",
+    "feature": "billed_amount",
+    "prediction": 0.7126023000736007,
+    "reference_delta": 0.10351299017895654,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1412",
+    "feature": "authorization_present",
+    "prediction": 0.7126023000736007,
+    "reference_delta": 0.40250268265717426,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1412",
+    "feature": "documentation_complete",
+    "prediction": 0.7126023000736007,
+    "reference_delta": 0.3672903421192858,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1412",
+    "feature": "procedure_group",
+    "prediction": 0.7126023000736007,
+    "reference_delta": -0.12591667962331599,
+    "stable_direction": false
+  },
+  {
+    "row_id": "72",
+    "feature": "payer",
+    "prediction": 0.03992082678631826,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "72",
+    "feature": "billed_amount",
+    "prediction": 0.03992082678631826,
+    "reference_delta": -0.011135514392629484,
+    "stable_direction": false
+  },
+  {
+    "row_id": "72",
+    "feature": "authorization_present",
+    "prediction": 0.03992082678631826,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "72",
+    "feature": "documentation_complete",
+    "prediction": 0.03992082678631826,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "72",
+    "feature": "procedure_group",
+    "prediction": 0.03992082678631826,
+    "reference_delta": -0.056259779521084456,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1430",
+    "feature": "payer",
+    "prediction": 0.2503693093366653,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1430",
+    "feature": "billed_amount",
+    "prediction": 0.2503693093366653,
+    "reference_delta": -0.07322775750364291,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1430",
+    "feature": "authorization_present",
+    "prediction": 0.2503693093366653,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1430",
+    "feature": "documentation_complete",
+    "prediction": 0.2503693093366653,
+    "reference_delta": 0.2157932777110024,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1430",
+    "feature": "procedure_group",
+    "prediction": 0.2503693093366653,
+    "reference_delta": -0.04950613891114092,
+    "stable_direction": false
+  },
+  {
+    "row_id": "930",
+    "feature": "payer",
+    "prediction": 0.2848931252789849,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "930",
+    "feature": "billed_amount",
+    "prediction": 0.2848931252789849,
+    "reference_delta": 0.06067367634565077,
+    "stable_direction": true
+  },
+  {
+    "row_id": "930",
+    "feature": "authorization_present",
+    "prediction": 0.2848931252789849,
+    "reference_delta": 0.24249623100352483,
+    "stable_direction": true
+  },
+  {
+    "row_id": "930",
+    "feature": "documentation_complete",
+    "prediction": 0.2848931252789849,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "930",
+    "feature": "procedure_group",
+    "prediction": 0.2848931252789849,
+    "reference_delta": -0.29556007566348863,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1368",
+    "feature": "payer",
+    "prediction": 0.031824815506910124,
+    "reference_delta": -0.03842201317786407,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1368",
+    "feature": "billed_amount",
+    "prediction": 0.031824815506910124,
+    "reference_delta": -0.01023121636993863,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1368",
+    "feature": "authorization_present",
+    "prediction": 0.031824815506910124,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1368",
+    "feature": "documentation_complete",
+    "prediction": 0.031824815506910124,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1368",
+    "feature": "procedure_group",
+    "prediction": 0.031824815506910124,
+    "reference_delta": -0.08650479796348295,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1790",
+    "feature": "payer",
+    "prediction": 0.0397976950414338,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1790",
+    "feature": "billed_amount",
+    "prediction": 0.0397976950414338,
+    "reference_delta": -0.011258646137513942,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1790",
+    "feature": "authorization_present",
+    "prediction": 0.0397976950414338,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1790",
+    "feature": "documentation_complete",
+    "prediction": 0.0397976950414338,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1790",
+    "feature": "procedure_group",
+    "prediction": 0.0397976950414338,
+    "reference_delta": -0.07890697807625421,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1469",
+    "feature": "payer",
+    "prediction": 0.685440415553962,
+    "reference_delta": -0.024833815205130283,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "billed_amount",
+    "prediction": 0.685440415553962,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1469",
+    "feature": "authorization_present",
+    "prediction": 0.685440415553962,
+    "reference_delta": 0.36099792562442895,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "documentation_complete",
+    "prediction": 0.685440415553962,
+    "reference_delta": 0.26128583598164534,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1469",
+    "feature": "procedure_group",
+    "prediction": 0.685440415553962,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2235",
+    "feature": "payer",
+    "prediction": 0.06731949991916183,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2235",
+    "feature": "billed_amount",
+    "prediction": 0.06731949991916183,
+    "reference_delta": 0.01626315874021409,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2235",
+    "feature": "authorization_present",
+    "prediction": 0.06731949991916183,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2235",
+    "feature": "documentation_complete",
+    "prediction": 0.06731949991916183,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2235",
+    "feature": "procedure_group",
+    "prediction": 0.06731949991916183,
+    "reference_delta": -0.011753642939141579,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2250",
+    "feature": "payer",
+    "prediction": 0.3262236380116355,
+    "reference_delta": 0.04356404080813048,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2250",
+    "feature": "billed_amount",
+    "prediction": 0.3262236380116355,
+    "reference_delta": -0.03862636149781484,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2250",
+    "feature": "authorization_present",
+    "prediction": 0.3262236380116355,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2250",
+    "feature": "documentation_complete",
+    "prediction": 0.3262236380116355,
+    "reference_delta": 0.276910885438416,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2250",
+    "feature": "procedure_group",
+    "prediction": 0.3262236380116355,
+    "reference_delta": -0.12590225345764267,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "payer",
+    "prediction": 0.5842185618892201,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2455",
+    "feature": "billed_amount",
+    "prediction": 0.5842185618892201,
+    "reference_delta": 0.13891781991738072,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "authorization_present",
+    "prediction": 0.5842185618892201,
+    "reference_delta": 0.4537491894373018,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "documentation_complete",
+    "prediction": 0.5842185618892201,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2455",
+    "feature": "procedure_group",
+    "prediction": 0.5842185618892201,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "815",
+    "feature": "payer",
+    "prediction": 0.5599977330377108,
+    "reference_delta": 0.007649658225803546,
+    "stable_direction": false
+  },
+  {
+    "row_id": "815",
+    "feature": "billed_amount",
+    "prediction": 0.5599977330377108,
+    "reference_delta": 0.08786300090797938,
+    "stable_direction": true
+  },
+  {
+    "row_id": "815",
+    "feature": "authorization_present",
+    "prediction": 0.5599977330377108,
+    "reference_delta": 0.29685287638179786,
+    "stable_direction": true
+  },
+  {
+    "row_id": "815",
+    "feature": "documentation_complete",
+    "prediction": 0.5599977330377108,
+    "reference_delta": 0.23951446767944162,
+    "stable_direction": true
+  },
+  {
+    "row_id": "815",
+    "feature": "procedure_group",
+    "prediction": 0.5599977330377108,
+    "reference_delta": -0.27604710423856393,
+    "stable_direction": false
+  },
+  {
+    "row_id": "180",
+    "feature": "payer",
+    "prediction": 0.05350951688863829,
+    "reference_delta": 0.009229990692130166,
+    "stable_direction": false
+  },
+  {
+    "row_id": "180",
+    "feature": "billed_amount",
+    "prediction": 0.05350951688863829,
+    "reference_delta": -0.00409748524194279,
+    "stable_direction": false
+  },
+  {
+    "row_id": "180",
+    "feature": "authorization_present",
+    "prediction": 0.05350951688863829,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "180",
+    "feature": "documentation_complete",
+    "prediction": 0.05350951688863829,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "180",
+    "feature": "procedure_group",
+    "prediction": 0.05350951688863829,
+    "reference_delta": -0.09371176515032364,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1401",
+    "feature": "payer",
+    "prediction": 0.046075005137490424,
+    "reference_delta": 0.0017954789409823022,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1401",
+    "feature": "billed_amount",
+    "prediction": 0.046075005137490424,
+    "reference_delta": -0.00703633556853351,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1401",
+    "feature": "authorization_present",
+    "prediction": 0.046075005137490424,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1401",
+    "feature": "documentation_complete",
+    "prediction": 0.046075005137490424,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1401",
+    "feature": "procedure_group",
+    "prediction": 0.046075005137490424,
+    "reference_delta": -0.033837573222956205,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1348",
+    "feature": "payer",
+    "prediction": 0.22054797984184357,
+    "reference_delta": -0.05165372903540469,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1348",
+    "feature": "billed_amount",
+    "prediction": 0.22054797984184357,
+    "reference_delta": 0.04112175901497031,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1348",
+    "feature": "authorization_present",
+    "prediction": 0.22054797984184357,
+    "reference_delta": 0.17112837234554593,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1348",
+    "feature": "documentation_complete",
+    "prediction": 0.22054797984184357,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1348",
+    "feature": "procedure_group",
+    "prediction": 0.22054797984184357,
+    "reference_delta": -0.03117604886081124,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2020",
+    "feature": "payer",
+    "prediction": 0.257176791095534,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2020",
+    "feature": "billed_amount",
+    "prediction": 0.257176791095534,
+    "reference_delta": -0.06642027574477422,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2020",
+    "feature": "authorization_present",
+    "prediction": 0.257176791095534,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2020",
+    "feature": "documentation_complete",
+    "prediction": 0.257176791095534,
+    "reference_delta": 0.21349434535018272,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2020",
+    "feature": "procedure_group",
+    "prediction": 0.257176791095534,
+    "reference_delta": -0.11888291694327235,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1544",
+    "feature": "payer",
+    "prediction": 0.2792384085208101,
+    "reference_delta": 0.043657310586982245,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1544",
+    "feature": "billed_amount",
+    "prediction": 0.2792384085208101,
+    "reference_delta": 0.03728887128418043,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1544",
+    "feature": "authorization_present",
+    "prediction": 0.2792384085208101,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1544",
+    "feature": "documentation_complete",
+    "prediction": 0.2792384085208101,
+    "reference_delta": 0.23071421707751102,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1544",
+    "feature": "procedure_group",
+    "prediction": 0.2792384085208101,
+    "reference_delta": -0.12623335486028087,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1396",
+    "feature": "payer",
+    "prediction": 0.042056031876848754,
+    "reference_delta": -0.00900030930209899,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "billed_amount",
+    "prediction": 0.042056031876848754,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1396",
+    "feature": "authorization_present",
+    "prediction": 0.042056031876848754,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "documentation_complete",
+    "prediction": 0.042056031876848754,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1396",
+    "feature": "procedure_group",
+    "prediction": 0.042056031876848754,
+    "reference_delta": -0.06398583520499808,
+    "stable_direction": false
+  },
+  {
+    "row_id": "374",
+    "feature": "payer",
+    "prediction": 0.04709292974412654,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "374",
+    "feature": "billed_amount",
+    "prediction": 0.04709292974412654,
+    "reference_delta": -0.003963411434821207,
+    "stable_direction": false
+  },
+  {
+    "row_id": "374",
+    "feature": "authorization_present",
+    "prediction": 0.04709292974412654,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "documentation_complete",
+    "prediction": 0.04709292974412654,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "374",
+    "feature": "procedure_group",
+    "prediction": 0.04709292974412654,
+    "reference_delta": -0.07617507761395681,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1028",
+    "feature": "payer",
+    "prediction": 0.03992082678631826,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1028",
+    "feature": "billed_amount",
+    "prediction": 0.03992082678631826,
+    "reference_delta": -0.011135514392629484,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1028",
+    "feature": "authorization_present",
+    "prediction": 0.03992082678631826,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1028",
+    "feature": "documentation_complete",
+    "prediction": 0.03992082678631826,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1028",
+    "feature": "procedure_group",
+    "prediction": 0.03992082678631826,
+    "reference_delta": -0.056259779521084456,
+    "stable_direction": false
+  },
+  {
+    "row_id": "598",
+    "feature": "payer",
+    "prediction": 0.22685962869314535,
+    "reference_delta": -0.18320535517096614,
+    "stable_direction": true
+  },
+  {
+    "row_id": "598",
+    "feature": "billed_amount",
+    "prediction": 0.22685962869314535,
+    "reference_delta": -0.015089908543484326,
+    "stable_direction": false
+  },
+  {
+    "row_id": "598",
+    "feature": "authorization_present",
+    "prediction": 0.22685962869314535,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "598",
+    "feature": "documentation_complete",
+    "prediction": 0.22685962869314535,
+    "reference_delta": 0.18988691717347594,
+    "stable_direction": true
+  },
+  {
+    "row_id": "598",
+    "feature": "procedure_group",
+    "prediction": 0.22685962869314535,
+    "reference_delta": -0.22285671103347132,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2173",
+    "feature": "payer",
+    "prediction": 0.3893919128472219,
+    "reference_delta": 0.022523679816959907,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2173",
+    "feature": "billed_amount",
+    "prediction": 0.3893919128472219,
+    "reference_delta": -0.007708592692767968,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2173",
+    "feature": "authorization_present",
+    "prediction": 0.3893919128472219,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2173",
+    "feature": "documentation_complete",
+    "prediction": 0.3893919128472219,
+    "reference_delta": 0.25806905301435645,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2173",
+    "feature": "procedure_group",
+    "prediction": 0.3893919128472219,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "325",
+    "feature": "payer",
+    "prediction": 0.08851308544019085,
+    "reference_delta": -0.0383503190973192,
+    "stable_direction": true
+  },
+  {
+    "row_id": "325",
+    "feature": "billed_amount",
+    "prediction": 0.08851308544019085,
+    "reference_delta": -0.016955484858048764,
+    "stable_direction": false
+  },
+  {
+    "row_id": "325",
+    "feature": "authorization_present",
+    "prediction": 0.08851308544019085,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "325",
+    "feature": "documentation_complete",
+    "prediction": 0.08851308544019085,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "325",
+    "feature": "procedure_group",
+    "prediction": 0.08851308544019085,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "643",
+    "feature": "payer",
+    "prediction": 0.29524847077014466,
+    "reference_delta": 0.03807167967461067,
+    "stable_direction": false
+  },
+  {
+    "row_id": "643",
+    "feature": "billed_amount",
+    "prediction": 0.29524847077014466,
+    "reference_delta": -0.07139965833122663,
+    "stable_direction": false
+  },
+  {
+    "row_id": "643",
+    "feature": "authorization_present",
+    "prediction": 0.29524847077014466,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "643",
+    "feature": "documentation_complete",
+    "prediction": 0.29524847077014466,
+    "reference_delta": 0.24979360545433377,
+    "stable_direction": true
+  },
+  {
+    "row_id": "643",
+    "feature": "procedure_group",
+    "prediction": 0.29524847077014466,
+    "reference_delta": -0.02335114627395335,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1725",
+    "feature": "payer",
+    "prediction": 0.12408972869375634,
+    "reference_delta": 0.004338916817819144,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1725",
+    "feature": "billed_amount",
+    "prediction": 0.12408972869375634,
+    "reference_delta": -0.016178837790127437,
+    "stable_direction": false
+  },
+  {
+    "row_id": "1725",
+    "feature": "authorization_present",
+    "prediction": 0.12408972869375634,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1725",
+    "feature": "documentation_complete",
+    "prediction": 0.12408972869375634,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "1725",
+    "feature": "procedure_group",
+    "prediction": 0.12408972869375634,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2301",
+    "feature": "payer",
+    "prediction": 0.13132285983286543,
+    "reference_delta": 0.00455522688160373,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2301",
+    "feature": "billed_amount",
+    "prediction": 0.13132285983286543,
+    "reference_delta": -0.008945706651018348,
+    "stable_direction": false
+  },
+  {
+    "row_id": "2301",
+    "feature": "authorization_present",
+    "prediction": 0.13132285983286543,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2301",
+    "feature": "documentation_complete",
+    "prediction": 0.13132285983286543,
+    "reference_delta": 0.0,
+    "stable_direction": true
+  },
+  {
+    "row_id": "2301",
+    "feature": "procedure_group",
+    "prediction": 0.13132285983286543,
+    "reference_delta": 0.0,
+    "stable_direction": false
+  }
+]

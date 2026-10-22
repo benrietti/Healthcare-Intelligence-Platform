@@ -1,0 +1,165 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "fb75859bc31744a19de8",
+  "position": {
+    "x": 1.1008911293212604,
+    "y": 234.48981054542847,
+    "z": 1000,
+    "height": 270.81921781303009,
+    "width": 797.04517762859257
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_claim_denial_queue"
+                    }
+                  },
+                  "Property": "review_rank"
+                }
+              },
+              "queryRef": "rpt_claim_denial_queue.review_rank"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_claim_denial_queue"
+                    }
+                  },
+                  "Property": "claim_id"
+                }
+              },
+              "queryRef": "rpt_claim_denial_queue.claim_id"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_claim_denial_queue"
+                    }
+                  },
+                  "Property": "payer"
+                }
+              },
+              "queryRef": "rpt_claim_denial_queue.payer"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_claim_denial_queue"
+                    }
+                  },
+                  "Property": "billed_amount"
+                }
+              },
+              "queryRef": "rpt_claim_denial_queue.billed_amount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_claim_denial_queue"
+                    }
+                  },
+                  "Property": "denial_probability"
+                }
+              },
+              "queryRef": "rpt_claim_denial_queue.denial_probability"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_claim_denial_queue"
+                    }
+                  },
+                  "Property": "authorization_present"
+                }
+              },
+              "queryRef": "rpt_claim_denial_queue.authorization_present"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "rpt_claim_denial_queue"
+                    }
+                  },
+                  "Property": "documentation_complete"
+                }
+              },
+              "queryRef": "rpt_claim_denial_queue.documentation_complete"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "51.375881321357596D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "rpt_claim_denial_queue.review_rank"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Synthetic Claims Ranked'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

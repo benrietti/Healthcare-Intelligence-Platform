@@ -1,0 +1,3 @@
+[0m16:48:55  Running with dbt=1.12.6
+[0m16:48:58  Registered adapter: bigquery=1.9.2
+[0m16:48:58  Performance info: warehouse/target/perf_info.json

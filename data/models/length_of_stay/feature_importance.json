@@ -1,0 +1,52 @@
+[
+  {
+    "feature": "facility_id",
+    "importance": 0.018752851336439492,
+    "std": 0.040091623992850635
+  },
+  {
+    "feature": "service_line",
+    "importance": 0.02228763212933522,
+    "std": 0.06623528853169848
+  },
+  {
+    "feature": "primary_diagnosis_group",
+    "importance": 0.12209940256415593,
+    "std": 0.03701116761458544
+  },
+  {
+    "feature": "payer",
+    "importance": -0.057771499109599486,
+    "std": 0.01613568198480351
+  },
+  {
+    "feature": "sex",
+    "importance": -0.03142045041545316,
+    "std": 0.0344483624413708
+  },
+  {
+    "feature": "home_state",
+    "importance": 0.06445769526093592,
+    "std": 0.045999960435117726
+  },
+  {
+    "feature": "patient_age_at_admission",
+    "importance": -0.1306208874437477,
+    "std": 0.062478664719133686
+  },
+  {
+    "feature": "admission_hour",
+    "importance": 0.025316234935799643,
+    "std": 0.09493596622298661
+  },
+  {
+    "feature": "admission_dow",
+    "importance": 0.0645721941488759,
+    "std": 0.049361246295233176
+  },
+  {
+    "feature": "admission_month",
+    "importance": 0.028877799677474413,
+    "std": 0.04127779486960442
+  }
+]

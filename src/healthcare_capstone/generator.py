@@ -32,11 +32,12 @@ ENCOUNTER_FIELDS = (
 )
 EVENT_FIELDS = (
     "event_id", "source_event_key", "encounter_id", "event_ts", "ingested_at",
-    "event_type", "department", "event_status", "synthetic",
+    "event_type", "department", "event_status", "synthetic", "source_system", "source_code",
 )
 CLAIM_FIELDS = (
     "claim_id", "encounter_id", "payer", "claim_submit_ts", "billed_amount",
     "allowed_amount", "paid_amount", "claim_status", "denial_reason", "synthetic",
+    "authorization_present", "documentation_complete", "procedure_group", "adjudicated_at",
 )
 
 
@@ -161,6 +162,8 @@ def generate_dataset(
                 "event_type": event_type,
                 "department": "" if is_missing_department else department,
                 "event_status": "complete",
+                "source_system": "synthetic_flowsheet",
+                "source_code": ("SYN-VITAL-HR", "SYN-VITAL-RR", "SYN-TEMP")[i % 3],
                 "synthetic": True,
             })
             event_id_counter += 1
@@ -181,7 +184,16 @@ def generate_dataset(
 
         billed = _money(rng, 1200, 95000)
         allowed = round(billed * rng.uniform(0.35, 0.82), 2)
-        status = rng.choices(("paid", "pending", "denied", "partial"), weights=(0.70, 0.12, 0.10, 0.08), k=1)[0]
+        authorization = rng.random() > 0.18
+        documentation = rng.random() > 0.22
+        procedure = rng.choice(("evaluation", "imaging", "procedure"))
+        denial_probability = min(0.85, 0.04 + 0.30 * (not authorization)
+                                 + 0.25 * (not documentation)
+                                 + 0.08 * (procedure == "procedure"))
+        status = "pending" if rng.random() < 0.10 else (
+            "denied" if rng.random() < denial_probability else
+            rng.choices(("paid", "partial"), weights=(0.9, 0.1))[0])
+        submitted = discharge + timedelta(days=rng.randint(1, 14))
         paid = {
             "paid": allowed,
             "pending": 0.0,
@@ -192,7 +204,11 @@ def generate_dataset(
             "claim_id": f"SYN-C-{len(claims) + 1:07d}",
             "encounter_id": encounter["encounter_id"],
             "payer": encounter["payer"],
-            "claim_submit_ts": _iso(discharge + timedelta(days=rng.randint(1, 14))),
+            "claim_submit_ts": _iso(submitted),
+            "authorization_present": authorization,
+            "documentation_complete": documentation,
+            "procedure_group": procedure,
+            "adjudicated_at": "" if status == "pending" else _iso(submitted + timedelta(days=rng.randint(3, 30))),
             "billed_amount": billed,
             "allowed_amount": allowed,
             "paid_amount": paid,

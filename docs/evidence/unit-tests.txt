@@ -1,0 +1,19 @@
+test_event_anomalies_are_injected_and_reported (test_generator.GeneratorTests.test_event_anomalies_are_injected_and_reported) ... ok
+test_generation_is_reproducible_except_manifest_timestamp (test_generator.GeneratorTests.test_generation_is_reproducible_except_manifest_timestamp) ... ok
+test_nonpositive_patient_count_is_rejected (test_generator.GeneratorTests.test_nonpositive_patient_count_is_rejected) ... ok
+test_readmission_label_matches_next_encounter_within_30_days (test_generator.GeneratorTests.test_readmission_label_matches_next_encounter_within_30_days) ... ok
+test_tables_have_expected_keys_and_synthetic_flag (test_generator.GeneratorTests.test_tables_have_expected_keys_and_synthetic_flag) ... ok
+test_features_exclude_future_outcomes_and_keep_row_identity (test_portfolio_build.PortfolioTests.test_features_exclude_future_outcomes_and_keep_row_identity) ... ok
+test_late_documentation_and_missing_time_excluded (test_portfolio_build.PortfolioTests.test_late_documentation_and_missing_time_excluded) ... ok
+test_missing_cleaning_prevents_ready_bed (test_portfolio_build.PortfolioTests.test_missing_cleaning_prevents_ready_bed) ... ok
+test_mixed_iso_precision_is_not_a_missing_event (test_portfolio_build.PortfolioTests.test_mixed_iso_precision_is_not_a_missing_event) ... ok
+test_psi_detects_shift_and_unseen_categories (test_portfolio_build.PortfolioTests.test_psi_detects_shift_and_unseen_categories) ... ok
+test_synthetic_edi_roundtrip (test_portfolio_build.PortfolioTests.test_synthetic_edi_roundtrip) ... ok
+test_training_labels_must_precede_cutoff (test_portfolio_build.PortfolioTests.test_training_labels_must_precede_cutoff) ... ok
+test_missing_evidence_fails_closed (test_quality_gate.GateTests.test_missing_evidence_fails_closed) ... ok
+test_threshold_and_staleness_fail (test_quality_gate.GateTests.test_threshold_and_staleness_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.272s
+
+OK
